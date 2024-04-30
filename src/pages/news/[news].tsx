@@ -7,7 +7,7 @@ export default function DynamicNews() {
       <Head>
         <title>News - Management, Analytics, Decision Making</title>
       </Head>
-      <NewsArticlePage />;
+      <NewsArticlePage />
     </>
   );
 }

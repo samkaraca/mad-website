@@ -7,7 +7,7 @@ export default function News() {
       <Head>
         <title>News - Management, Analytics, Decision Making</title>
       </Head>
-      <NewsPage />;
+      <NewsPage />
     </>
   );
 }
