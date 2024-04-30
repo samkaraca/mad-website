@@ -1,5 +1,5 @@
+import { crimsonPro, jost } from "@/fonts";
 import styles from "./footer.module.scss";
-import { crimsonPro, jost } from "@/pages/_app";
 
 export const Footer = () => {
   return (

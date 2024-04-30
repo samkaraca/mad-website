@@ -1,4 +1,4 @@
-import { crimsonPro } from "@/pages/_app";
+import { crimsonPro } from "@/fonts";
 import styles from "./news-page.module.scss";
 
 export const NewsPage = () => {
