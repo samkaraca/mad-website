@@ -11,6 +11,33 @@
   }
 
   > p {
-    font-size: calc(1.3rem * var(--100-to-85));
+    font-size: calc(1.3rem * var(--100-to-90));
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .welcome-banner {
+    > h1:first-child {
+      display: none;
+    }
+
+    > img {
+      height: 20rem;
+    }
+  }
+
+  .text-content {
+    padding: 1.25rem;
   }
 }

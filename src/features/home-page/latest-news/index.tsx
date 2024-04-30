@@ -1,16 +1,12 @@
 import { crimsonPro, lato } from "@/fonts";
 import styles from "./latest-news.module.scss";
+import { useState } from "react";
 
 export const LatestNews = () => {
   return (
-    <section
-      aria-labelledby="news-list-heading"
-      className={styles["latest-news"]}
-    >
-      <h3 id="news-list-heading" className={`section-title ${lato.className}`}>
-        THE LATEST FROM MAD
-      </h3>
-      <ul className={styles["news-cards"]}>
+    <section className={styles["latest-news"]}>
+      <h3 className="section-title">THE LATEST FROM MAD</h3>
+      <section className={styles["news-cards"]}>
         <NewsCard
           link="/news/1"
           title="MAD’s New Website"
@@ -45,23 +41,12 @@ const NewsCard = ({
   link?: string;
 }) => {
   return (
-    <li>
-      <a
-        href={link}
-        className={`${styles["news-card"]} ${link ? styles["clickable"] : ""}`}
-      >
-        <img src={img ? img : "/placeholder.jpg"} alt="" />
-        <div className={styles["content"]}>
-          <h4 className={crimsonPro.className}>{title}</h4>
-          {date && (
-            <div className={styles["date"]}>
-              <img src="/icons/calendar.svg" alt="calendar icon" />
-              <p>{date}</p>
-            </div>
-          )}
-          <p>{text}</p>
-        </div>
-      </a>
-    </li>
+    <section className={styles["news-card"]}>
+      <img src={img} alt="" />
+      <section className={styles["content"]}>
+        <h4>{title}</h4>
+        <p>{text}</p>
+      </section>
+    </section>
   );
 };
