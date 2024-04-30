@@ -23,7 +23,7 @@ export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
             onClick={() => setIsNavOpen(!isNavOpen)}
             aria-label="Menu Button"
           >
-            <img srcSet="/hamburger.svg" alt="Menu icon" />
+            <img src="/menu.svg" alt="Menu icon" />
           </button>
         )}
         <img

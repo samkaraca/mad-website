@@ -3,9 +3,9 @@ import styles from "./news-page.module.scss";
 
 export const NewsPage = () => {
   return (
-    <main className={styles["main"]}>
+    <main id="main" className={styles["main"]}>
       <section className={styles["banner"]} aria-label="News Banner">
-        <h1>News</h1>
+        <h1 className={crimsonPro.className}>News</h1>
       </section>
       <section className={styles["news-container"]}>
         <NewsCard />

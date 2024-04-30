@@ -4,6 +4,10 @@
   margin-top: 5rem;
   width: 100%;
   max-width: gv.$readable-content-max-width;
+
+  > h3 {
+    font-size: calc(1.2rem * var(--100-to-90));
+  }
 }
 
 .news-cards {
@@ -15,16 +19,81 @@
 
 // NEWSCARD COMPONENT
 .news-card {
+  position: relative;
+  border: 0.1rem solid #ccdbe8;
+  border-radius: 0.2rem;
   display: flex;
-  gap: 1.5rem;
+  text-decoration: none;
+  color: black;
+
+  &.clickable {
+    cursor: pointer;
+  }
+
+  &.clickable:hover {
+    border: 0.1rem solid #0090e9;
+
+    > .content {
+      > h4 {
+        text-underline-offset: 0.2rem;
+        text-decoration: underline;
+        text-decoration-color: #ccdbe8;
+        text-decoration-thickness: 1px;
+      }
+    }
+  }
 
   > img {
-    width: 13rem;
+    border-radius: 0.1rem 0 0 0.1rem;
+    width: 15rem;
+    min-width: 15rem;
     aspect-ratio: 4/3;
     object-fit: cover;
   }
 
   > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     padding: 1rem;
+
+    > h4 {
+      color: gv.$primary-color;
+      font-size: calc(1.5rem * var(--100-to-90));
+      position: relative;
+    }
+
+    > p {
+      font-size: calc(1.1rem * var(--100-to-90));
+    }
+  }
+}
+
+.content .date {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+
+  > img {
+    height: 1.3rem;
+    aspect-ratio: 1/1;
+    object-fit: fill;
+  }
+
+  > p {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .news-card {
+    flex-direction: column;
+
+    > img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 0.1rem 0.1rem 0 0;
+    }
   }
 }

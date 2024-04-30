@@ -18,13 +18,11 @@ export const Layout = ({ children }: { children: ReactNode }) => {
     const className = document.getElementById("app")?.className;
     if (className?.includes(appNavOpenClassName)) {
       document.getElementById("app")?.classList.remove(appNavOpenClassName);
-      document.getElementById("overlay")?.classList.remove(appNavOpenClassName);
       document
         .getElementById("nav")
         ?.classList.remove(navigationNavOpenClassName);
     } else {
       document.getElementById("app")?.classList.add(appNavOpenClassName);
-      document.getElementById("overlay")?.classList.add(appNavOpenClassName);
       document.getElementById("nav")?.classList.add(navigationNavOpenClassName);
     }
   }, [isNavOpen]);

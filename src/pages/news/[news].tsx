@@ -1,3 +1,5 @@
+import { NewsArticlePage } from "@/features/news-article-page";
+
 export default function DynamicNews() {
-  return <h1>Dynamic News</h1>;
+  return <NewsArticlePage />;
 }

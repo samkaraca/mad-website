@@ -10,10 +10,7 @@ export const HomePage = () => {
         <h1 className={crimsonPro.className}>
           Management, Analytics, and Decision Making
         </h1>
-        <img
-          src="https://www.yale.edu/sites/default/files/styles/cover_image_1400x788/public/cross_campus3.jpg?itok=bPg-fzkm"
-          alt="Campus photo"
-        />
+        <img src="/massey-building.jpg" alt="Campus photo" />
         <div className={styles["white-background"]}>
           <div className={styles["readable"]}>
             <section className={styles["welcome-text"]}>
