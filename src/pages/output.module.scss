@@ -10,11 +10,65 @@ $themebox-red-light: #FFEDE2;
 $themebox-red: #F37021;
 $themebox-red-dark: #B42217;
 
+.output-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .year-block{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    border-top: 0.5rem solid;
+    padding: 1rem 3rem;
     h2{
-        font-size: 128px;
+        font-size: 2rem;
     }
     ul{
-        font-size: 36px;
+        font-size: 1rem;
+        li{
+            padding: 0.5rem 0rem;
+            margin-left: -1rem;
+        }
+    }
+    hr{
+        border-width: 0.06rem;
+    }
+}
+
+.themed-container-1{
+    background-color: $themebox-green-light;
+    border-color: $themebox-green;
+    color: $themebox-green-dark;
+    li{
+        color: $themebox-green-dark;
+    }
+    hr{
+        border-color: $themebox-green-dark;
+    }
+}
+
+.themed-container-2{
+    background-color: $themebox-blue-light;
+    border-color: $themebox-blue;
+    color: $themebox-blue-dark;
+    li{
+        color: $themebox-blue-dark;
+    }
+    hr{
+        border-color: $themebox-blue-dark;
+    }
+}
+
+.themed-container-3{
+    background-color: $themebox-red-light;
+    border-color: $themebox-red;
+    color: $themebox-red-dark;
+    li{
+        color: $themebox-red-dark;
+    }
+    hr{
+        border-color: $themebox-red-dark;
     }
 }
