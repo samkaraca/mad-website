@@ -38,7 +38,7 @@ const data: Data = {
     <>
     <img src="../../OutputBanner.jpg"></img>
     <h1>All Publications By The MAD Research Group</h1>
-      <div>
+      <div className = {styles["output-list"]}>
         {years.map((year, index) => {
           // Calculate class name index, cycles through 1, 2, 3
           const classNameIndex = (index % 3) + 1;
