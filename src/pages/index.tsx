@@ -11,7 +11,7 @@ export default function Home() {
         <title>MAD - Management Analytics Decision Making</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main></main>
+      <HomePage />
     </>
   );
 }
