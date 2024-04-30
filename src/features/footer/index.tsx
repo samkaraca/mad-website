@@ -1,9 +1,17 @@
 import { crimsonPro, jost } from "@/fonts";
 import styles from "./footer.module.scss";
+import { Overlay } from "@/components/overlay";
 
-export const Footer = () => {
+export const Footer = ({
+  isOverlayOpen,
+  onOverlayClick,
+}: {
+  isOverlayOpen: boolean;
+  onOverlayClick: VoidFunction;
+}) => {
   return (
     <footer id="footer" className={styles["footer"]}>
+      <Overlay isOpen={isOverlayOpen} onClick={onOverlayClick} />
       <section className={`${styles["contact"]}`}>
         <h2 className={`${jost.className}`}>CONTACT INFO</h2>
         <div className={styles["divider"]} />

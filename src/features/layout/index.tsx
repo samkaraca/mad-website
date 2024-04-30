@@ -6,6 +6,7 @@ import { Navigation } from "../navigation";
 import { Header } from "../header";
 import { lato } from "@/fonts";
 import { usePathname } from "next/navigation";
+import { Overlay } from "@/components/overlay";
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   const path = usePathname();
@@ -33,14 +34,13 @@ export const Layout = ({ children }: { children: ReactNode }) => {
       <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Navigation path={path} />
       <main className={styles["main"]}>
-        <div
-          id="overlay"
-          className={styles["overlay"]}
-          onClick={() => setIsNavOpen(false)}
-        />
+        <Overlay isOpen={isNavOpen} onClick={() => setIsNavOpen(false)} />
         {children}
       </main>
-      <Footer />
+      <Footer
+        isOverlayOpen={isNavOpen}
+        onOverlayClick={() => setIsNavOpen(false)}
+      />
     </main>
   );
 };

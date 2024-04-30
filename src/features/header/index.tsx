@@ -1,3 +1,4 @@
+import { Overlay } from "@/components/overlay";
 import styles from "./header.module.scss";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
   return (
     <header id="header" className={styles["header"]}>
+      <Overlay isOpen={isNavOpen} onClick={() => setIsNavOpen(false)} />
       <section className={styles["title-bar"]}>
         {isNavOpen ? (
           <button

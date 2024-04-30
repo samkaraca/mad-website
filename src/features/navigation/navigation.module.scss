@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 1280px) {
   .nav {
-    position: fixed;
+    position: absolute;
     left: -260px;
     transition: left 0.5s;
 
