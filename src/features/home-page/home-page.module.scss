@@ -7,11 +7,12 @@
 .welcome-text {
   > h1 {
     font-size: calc(3rem * var(--100-to-85));
+    font-size: calc(3rem * var(--100-to-85));
     margin-bottom: 2rem;
   }
 
   > p {
-    font-size: calc(1.3rem * var(--100-to-90));
+    font-size: calc(1.3rem * var(--100-to-85));
   }
 }
 

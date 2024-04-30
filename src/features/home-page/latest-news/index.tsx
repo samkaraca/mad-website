@@ -1,11 +1,11 @@
-import { crimsonPro, lato } from "@/fonts";
+import { crimsonPro } from "@/fonts";
 import styles from "./latest-news.module.scss";
 import { useState } from "react";
 
 export const LatestNews = () => {
   return (
     <section className={styles["latest-news"]}>
-      <h3 className="section-title">THE LATEST FROM MAD</h3>
+      <h3 className={`section-title`}>THE LATEST FROM MAD</h3>
       <section className={styles["news-cards"]}>
         <NewsCard
           link="/news/1"
@@ -41,12 +41,21 @@ const NewsCard = ({
   link?: string;
 }) => {
   return (
-    <section className={styles["news-card"]}>
-      <img src={img} alt="" />
+    <a
+      href={link}
+      className={`${styles["news-card"]} ${link ? styles["clickable"] : ""}`}
+    >
+      <img src={img ? img : "/placeholder.jpg"} alt="" />
       <section className={styles["content"]}>
-        <h4>{title}</h4>
+        <h4 className={crimsonPro.className}>{title}</h4>
+        {date && (
+          <section className={styles["date"]} aria-label="date">
+            <img src="/calendar.svg" alt="calendar icon" />
+            <p>{date}</p>
+          </section>
+        )}
         <p>{text}</p>
       </section>
-    </section>
+    </a>
   );
 };
