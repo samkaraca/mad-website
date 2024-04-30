@@ -28,17 +28,17 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   }, [isNavOpen]);
 
   return (
-    <main id="app" className={`${lato.className} ${styles["app"]}`}>
+    <div id="app" className={`${lato.className} ${styles["app"]}`}>
       <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       <Navigation path={path} />
-      <main className={styles["main"]}>
+      <div className={styles["main"]}>
         <Overlay isOpen={isNavOpen} onClick={() => setIsNavOpen(false)} />
         {children}
-      </main>
+      </div>
       <Footer
         isOverlayOpen={isNavOpen}
         onOverlayClick={() => setIsNavOpen(false)}
       />
-    </main>
+    </div>
   );
 };
