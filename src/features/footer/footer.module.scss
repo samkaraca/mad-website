@@ -1,0 +1,46 @@
+.footer {
+  grid-area: footer;
+  position: relative;
+
+  a {
+    color: white;
+  }
+
+  background-color: #202020;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  padding-inline: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact {
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+  font-weight: lighter;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .divider {
+    height: 0.1rem;
+    background-color: white;
+    width: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.copyright {
+  width: 100%;
+
+  .divider {
+    margin-block: 0.6rem;
+    height: 0.1rem;
+    background-color: grey;
+  }
+
+  color: grey;
+}

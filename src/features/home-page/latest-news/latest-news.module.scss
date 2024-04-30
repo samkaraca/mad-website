@@ -1,0 +1,30 @@
+@use "../../../styles/variables.scss" as gv;
+
+.latest-news {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: gv.$readable-content-max-width;
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+// NEWSCARD COMPONENT
+.news-card {
+  display: flex;
+  gap: 1.5rem;
+
+  > img {
+    width: 13rem;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  > .content {
+    padding: 1rem;
+  }
+}

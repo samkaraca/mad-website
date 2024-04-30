@@ -1,0 +1,79 @@
+@use "../../styles/variables.scss" as gv;
+
+.nav {
+  grid-area: nav;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+
+  > img {
+    margin-block: 2rem;
+    width: 80%;
+    object-fit: cover;
+  }
+
+  > ul {
+    width: 100%;
+  }
+
+  > h2 {
+    display: none;
+    padding-block: 0.8rem;
+    font-size: 1.3rem;
+    width: 260px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.links {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  a:only-child {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.link > a:only-child {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  .color-indicator {
+    width: 0.6rem;
+    height: 100%;
+    background-color: gv.$primary-color;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .nav {
+    position: absolute;
+    left: -260px;
+    transition: left 0.5s;
+
+    > img {
+      display: none;
+    }
+
+    > h2 {
+      display: initial;
+    }
+  }
+
+  .nav.nav-open {
+    left: 0px;
+  }
+}

@@ -1,0 +1,57 @@
+@use "../../styles/variables.scss" as gv;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  width: 100%;
+  background-color: gv.$primary-color;
+  height: 20rem;
+}
+
+.news-container {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 70rem;
+  flex-wrap: wrap;
+}
+
+// NEWS CARD COMPONENT
+.news-card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  > img {
+    height: 12rem;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  > .texts {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    > h2 {
+      font-size: 2rem;
+    }
+
+    > p {
+      font-size: 1.1rem;
+    }
+  }
+}
