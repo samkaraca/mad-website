@@ -1,0 +1,47 @@
+@use "../styles/variables.scss" as gv;
+
+.profile-card{
+    padding: 1.5rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    border: 0.05rem solid;
+    border-radius: 0.2rem;
+    border-color: gv.$quaternary-color;
+    margin: 1rem;
+    box-shadow: 1px 1px 4px gray;
+    .title{
+        text-transform: uppercase;
+        color: gv.$primary-color;
+    }
+    .profile-frame{
+        margin-bottom: 1rem;
+        width: 6rem;
+        height: 6rem;
+        border: 0.1rem solid;
+        border-radius: 5rem;
+        border-color: gv.$secondary-color;
+        div{
+            border-radius: 50%;
+            img{
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+    }
+    .subset{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        p{
+            margin-left: 1rem;
+        }
+    }
+    hr{
+        border: 0.05rem solid;
+        border-color: gv.$quaternary-color;
+    }
+}
