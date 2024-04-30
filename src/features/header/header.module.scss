@@ -1,8 +1,54 @@
+@use "../../styles/variables.scss" as gv;
+
 .header {
-  background-color: #202020;
-  padding: 1rem;
+  position: relative;
+  grid-area: header;
+  display: none;
 }
 
-.logo {
-  max-height: 3rem;
+.title-bar {
+  display: flex;
+  justify-content: center;
+  background-color: gv.$primary-color;
+  color: white;
+  align-items: center;
+
+  > h1 {
+    font-size: 1.8rem;
+    padding-block: 0.6rem;
+  }
+
+  > button {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: gv.$secondary-color;
+    height: 3.2rem;
+    aspect-ratio: 1;
+
+    > img {
+      width: 2.3rem;
+      filter: invert(1);
+    }
+  }
+
+  > .logo {
+    padding-block: 0.4rem;
+    max-height: 5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-bar {
+    > h1 {
+      font-size: 1.5rem;
+    }
+  }
 }

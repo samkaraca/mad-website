@@ -1,5 +1,22 @@
-$primary-color: #004b8d;
-$secondary-color: #e4a024;
+@use "./variables.scss" as gv;
+
+:root {
+  --100-to-70: 1;
+  --100-to-60: 1;
+  --100-to-50: 1;
+  --100-to-80: 1;
+  --100-to-90: 1;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --100-to-90: 0.9;
+    --100-to-80: 0.8;
+    --100-to-70: 0.7;
+    --100-to-60: 0.6;
+    --100-to-50: 0.5;
+  }
+}
 
 * {
   margin: 0;
@@ -7,4 +24,25 @@ $secondary-color: #e4a024;
 
 a {
   color: grey;
+}
+
+.bottom-line {
+  text-decoration: underline;
+  text-decoration-color: gv.$secondary-color;
+}
+
+.section-title {
+  padding: 0.4rem;
+  background-color: gv.$secondary-color;
+  width: max-content;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 0;
+}
+
+hr {
+  border: solid 0.1rem grey;
 }

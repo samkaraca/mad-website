@@ -1,9 +1,9 @@
 import styles from "./footer.module.scss";
-import { crimsonPro, lato, jost } from "@/pages/_app";
+import { crimsonPro, jost } from "@/pages/_app";
 
 export const Footer = () => {
   return (
-    <footer className={styles["footer"]}>
+    <footer id="footer" className={styles["footer"]}>
       <section className={`${styles["contact"]}`}>
         <h2 className={`${jost.className}`}>CONTACT INFO</h2>
         <div className={styles["divider"]} />
