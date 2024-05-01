@@ -10,25 +10,33 @@
     border-radius: 0.2rem;
     border-color: gv.$quaternary-color;
     margin: 1rem;
+    width: 20rem;
     box-shadow: 1px 1px 4px gray;
     .title{
+        font-size: 0.8rem;
         text-transform: uppercase;
+        font-weight: 500;
         color: gv.$primary-color;
     }
     .profile-frame{
         margin-bottom: 1rem;
-        width: 6rem;
-        height: 6rem;
-        border: 0.1rem solid;
-        border-radius: 5rem;
+        width: 7rem;
+        height: 7rem;
+        border: 0.15rem solid;
+        border-radius: 50%;
         border-color: gv.$secondary-color;
-        div{
-            border-radius: 50%;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
             img{
+                border-radius: 50%;
+                width: 88%;
+                height: 88%;
                 object-fit: cover;
                 overflow: hidden;
             }
-        }
     }
     .subset{
         margin-top: 1rem;

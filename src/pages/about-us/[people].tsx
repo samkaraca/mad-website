@@ -1,4 +1,5 @@
 import styles from "./people.module.scss";
+import { jost } from "@/fonts";
 
 interface AcademicProfile {
     name: string;
@@ -50,12 +51,13 @@ const data: AcademicProfile = {
 export default function People() {
     return (
         <>
+            <div className={styles["backgroundBanner"]} />
             <div className = {styles["profile"]}>
                 <div className = {styles["header"]}>
                     <img src={data.imgUrl}></img>
                     <div>
                         <h2>{data.name}</h2>
-                        <p>{data.title}</p>
+                        <p className = {`${jost.className} ${styles["title"]}`}>{data.title}</p>
                     </div>
                 </div>
                 <div className = {styles["basics"]}>

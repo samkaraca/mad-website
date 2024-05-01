@@ -1,4 +1,14 @@
-@use "../styles/variables.scss" as gv;
+@use "../../styles/variables.scss" as gv;
+
+.backgroundBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 80vh;
+    background-color: gv.$primary-color;
+  }
 
 .header{
     display: flex;
@@ -17,6 +27,8 @@
         font-size: 2rem;
     }
     p{
+        font-size: 0.8rem;
+        font-weight: 500;
         color: gv.$tertiary-color;
         text-transform: uppercase;
     }
@@ -24,8 +36,9 @@
 
 .profile{
     margin: 3rem;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
     padding: 3rem 2rem;
+    background-color: white;
     hr{
         border-width: 0.01rem;
     }

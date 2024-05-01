@@ -1,3 +1,5 @@
+@use "../styles/variables.scss" as gv;
+
 $themebox-green-light: #F5FBE2;
 $themebox-green: #92AF2B;
 $themebox-green-dark: #5E6738;
@@ -10,6 +12,35 @@ $themebox-red-light: #FFEDE2;
 $themebox-red: #F37021;
 $themebox-red-dark: #B42217;
 
+.backgroundBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 25vh;
+    background-color: #efefef
+  }
+  
+.layout {
+    max-width: gv.$readable-content-max-width;
+    width: 80%;
+    padding: 2% 10%;
+    img{
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        text-decoration: underline;
+        text-decoration-color: gv.$secondary-color;
+        text-decoration-style: solid;
+    }
+}
+
 .output-list{
     display: flex;
     flex-direction: column;
@@ -21,7 +52,7 @@ $themebox-red-dark: #B42217;
     flex-direction: column;
     gap: 0.4rem;
     border-top: 0.5rem solid;
-    padding: 1rem 3rem;
+    padding: 1.2rem 3rem 1rem;
     h2{
         font-size: 2rem;
     }

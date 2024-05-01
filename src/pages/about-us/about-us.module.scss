@@ -1,0 +1,121 @@
+@use "../../styles/variables.scss" as gv;
+
+.layout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.backgroundBanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  background-color: gv.$primary-color;
+}
+
+.welcome-text{
+  text-decoration: underline;
+  text-decoration-color: gv.$secondary-color;
+  text-decoration-thickness: 0.2rem;
+}
+
+.content {
+  width: 70%;
+  margin-inline: 2rem;
+  margin-top: 2rem;
+
+  > h1:first-child {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: calc(4rem * var(--100-to-70));
+    margin-bottom: calc(3.5rem * var(--100-to-70));
+    margin-top: calc(3.5rem * var(--100-to-50));
+    text-align: center;
+    color: white;
+  }
+
+  > img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+}
+
+.white-background {
+  background-color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readable {
+  max-width: gv.$readable-content-max-width;
+}
+
+.welcome-text {
+  > h1 {
+    font-size: calc(3rem * var(--100-to-70));
+    margin-bottom: 2rem;
+    margin-top: calc(1rem * var(--100-to-90));
+  }
+
+  > p {
+    font-size: calc(1.3rem * var(--100-to-90));
+  }
+}
+
+.profile-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 0.2rem;
+  align-items: stretch; 
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0.1rem;
+  box-sizing: border-box;
+}
+@media (max-width: 750px) {
+  .profile-display {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .welcome-banner {
+    > h1:first-child {
+      display: none;
+    }
+
+    > img {
+      height: 20rem;
+    }
+  }
+
+  .text-content {
+    padding: 1.25rem;
+  }
+}

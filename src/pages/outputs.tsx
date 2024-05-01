@@ -1,4 +1,4 @@
-import styles from "./output.module.scss";
+import styles from "./outputs.module.scss";
 
 interface Data {
     [year: string]: string[];
@@ -35,7 +35,8 @@ const data: Data = {
     const years = Object.keys(data).sort((a, b) => b.localeCompare(a)); // Sort years descending
     
     return (
-    <>
+    <div className = {styles["layout"]}>
+    <div className={styles["backgroundBanner"]} />
     <img src="../../OutputBanner.jpg"></img>
     <h1>All Publications By The MAD Research Group</h1>
       <div className = {styles["output-list"]}>
@@ -56,6 +57,6 @@ const data: Data = {
           );
         })}
       </div>
-      </>
+      </div>
     );
   }

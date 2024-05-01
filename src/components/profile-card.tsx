@@ -1,4 +1,5 @@
-import styles from "./profile_card.module.scss";
+import styles from "./profile-card.module.scss";
+import { jost } from "@/fonts";
 
 interface Data {
     name: string;
@@ -14,21 +15,28 @@ export default function ProfileCard (props: Data) {
         <div className={styles["profile-card"]}>
             
             <div className={styles["profile-frame"]}>
-                <div>
-                    <img src={props.imgsrc}></img>
-                </div>
+                <img src={props.imgsrc}></img>
             </div>
             
             <h3>{props.name}</h3>
-            <p className={styles["title"]}>{props.title}</p>
+            <p className={`${jost.className} ${styles["title"]}`}>{props.title}</p>
             <div className={styles["subset"]}>
-            <hr></hr>
+            {props.phone &&
+            <div>
+            <hr/>
             <p>{props.phone}</p>
-            <hr></hr>
+            </div>}
+            {props.email &&
+            <div>
+            <hr/>
             <p>{props.email}</p>
-            <hr></hr>
+            </div>}
+            {props.building &&
+            <div>
+            <hr/>
             <p>{props.building}</p>
-            <hr></hr>
+            </div>}
+            <hr/>
             </div>
         </div>
     )   
