@@ -16,14 +16,14 @@ export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
             onClick={() => setIsNavOpen(!isNavOpen)}
             aria-label="Close Menu Button"
           >
-            <img src="/close.svg" alt="Close icon" />
+            <img src="/icons/close.svg" alt="Close icon" />
           </button>
         ) : (
           <button
             onClick={() => setIsNavOpen(!isNavOpen)}
             aria-label="Menu Button"
           >
-            <img src="/menu.svg" alt="Menu icon" />
+            <img src="/icons/menu.svg" alt="Menu icon" />
           </button>
         )}
         <img
