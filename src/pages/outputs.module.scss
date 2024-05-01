@@ -1,5 +1,5 @@
 @use "../styles/variables.scss" as gv;
-
+/*
 $themebox-green-light: #F5FBE2;
 $themebox-green: #92AF2B;
 $themebox-green-dark: #5E6738;
@@ -11,6 +11,19 @@ $themebox-blue-dark: #004B8D;
 $themebox-red-light: #FFEDE2;
 $themebox-red: #F37021;
 $themebox-red-dark: #B42217;
+*/
+
+$themebox-green-light: white;
+$themebox-green: gv.$secondary-color;
+$themebox-green-dark: black;
+
+$themebox-blue-light: #EBF6FF;
+$themebox-blue: #038FE8;
+$themebox-blue-dark: #004B8D;
+
+$themebox-red-light: #EBF6FF;
+$themebox-red: #038FE8;
+$themebox-red-dark: #004B8D;
 
 .backgroundBanner {
     position: absolute;
@@ -18,30 +31,34 @@ $themebox-red-dark: #B42217;
     left: 0;
     right: 0;
     z-index: -1;
-    height: 25vh;
-    background-color: #efefef
+    height: 100vh;
+    background-color: gv.$primary-color;
   }
   
 .layout {
     max-width: gv.$readable-content-max-width;
-    width: 80%;
+    width: 100%;
     padding: 2% 10%;
     img{
         width: 100%;
         height: 20rem;
         object-fit: cover;
+        display: block;
     }
     h1{
         font-size: 2.5rem;
         padding-top: 1rem;
         padding-bottom: 3rem;
-        text-decoration: underline;
-        text-decoration-color: gv.$secondary-color;
-        text-decoration-style: solid;
     }
 }
 
+.content{
+    background-color: white;
+    padding: 0rem 2rem;
+}
+
 .output-list{
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -81,25 +98,25 @@ $themebox-red-dark: #B42217;
 }
 
 .themed-container-2{
-    background-color: $themebox-blue-light;
-    border-color: $themebox-blue;
-    color: $themebox-blue-dark;
+    background-color: $themebox-green-light;
+    border-color: $themebox-green;
+    color: $themebox-green-dark;
     li{
-        color: $themebox-blue-dark;
+        color: $themebox-green-dark;
     }
     hr{
-        border-color: $themebox-blue-dark;
+        border-color: $themebox-green-dark;
     }
 }
 
 .themed-container-3{
-    background-color: $themebox-red-light;
-    border-color: $themebox-red;
-    color: $themebox-red-dark;
+    background-color: $themebox-green-light;
+    border-color: $themebox-green;
+    color: $themebox-green-dark;
     li{
-        color: $themebox-red-dark;
+        color: $themebox-green-dark;
     }
     hr{
-        border-color: $themebox-red-dark;
+        border-color: $themebox-green-dark;
     }
 }

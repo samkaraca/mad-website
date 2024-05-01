@@ -37,7 +37,9 @@ const data: Data = {
     return (
     <div className = {styles["layout"]}>
     <div className={styles["backgroundBanner"]} />
-    <img src="../../OutputBanner.jpg"></img>
+    
+    <img src="https://dwvt5wwshu97q.cloudfront.net/accounts/485/files/01HMATVWR78T372K5RYYTV08W1/356888-preview.webp?v=63872738323"></img>
+    <div className = {styles["content"]}>
     <h1>All Publications By The MAD Research Group</h1>
       <div className = {styles["output-list"]}>
         {years.map((year, index) => {
@@ -56,6 +58,7 @@ const data: Data = {
             </div>
           );
         })}
+        </div>
       </div>
       </div>
     );

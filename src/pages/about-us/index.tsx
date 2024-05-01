@@ -44,8 +44,8 @@ export default function AboutUs() {
           About Us
         </h1>
         <img
-          src="https://www.yale.edu/sites/default/files/styles/cover_image_1400x788/public/cross_campus3.jpg?itok=bPg-fzkm"
-          alt="Campus photo"
+          src="https://dwvt5wwshu97q.cloudfront.net/accounts/485/files/01HMATSS8X0RZVT0KY29FQG7FE/350522-preview.webp?v=63872738827"
+          alt="Oç"
         />
         <div className={styles["white-background"]}>
           <div className={styles["readable"]}>
