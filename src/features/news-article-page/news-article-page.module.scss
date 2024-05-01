@@ -12,7 +12,8 @@
   align-items: center;
   color: white;
   min-height: 17rem;
-  background-color: gv.$primary-color;
+  // background-color: gv.$primary-color;
+  background: url("/default-bg-2.svg") no-repeat center center;
   width: 100%;
 
   > h1 {
