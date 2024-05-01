@@ -4,9 +4,14 @@ import { useState } from "react";
 
 export const LatestNews = () => {
   return (
-    <section className={styles["latest-news"]}>
-      <h3 className={`section-title`}>THE LATEST FROM MAD</h3>
-      <section className={styles["news-cards"]}>
+    <section
+      aria-labelledby="news-list-heading"
+      className={styles["latest-news"]}
+    >
+      <h3 id="news-list-heading" className={`section-title`}>
+        THE LATEST FROM MAD
+      </h3>
+      <ul className={styles["news-cards"]}>
         <NewsCard
           link="/news/1"
           title="MAD’s New Website"
@@ -22,7 +27,7 @@ export const LatestNews = () => {
           title="MAD’s New Website"
           text="We are excited to announce the launch of our new website!"
         />
-      </section>
+      </ul>
     </section>
   );
 };
@@ -41,21 +46,23 @@ const NewsCard = ({
   link?: string;
 }) => {
   return (
-    <a
-      href={link}
-      className={`${styles["news-card"]} ${link ? styles["clickable"] : ""}`}
-    >
-      <img src={img ? img : "/placeholder.jpg"} alt="" />
-      <section className={styles["content"]}>
-        <h4 className={crimsonPro.className}>{title}</h4>
-        {date && (
-          <section className={styles["date"]} aria-label="date">
-            <img src="/calendar.svg" alt="calendar icon" />
-            <p>{date}</p>
-          </section>
-        )}
-        <p>{text}</p>
-      </section>
-    </a>
+    <li>
+      <a
+        href={link}
+        className={`${styles["news-card"]} ${link ? styles["clickable"] : ""}`}
+      >
+        <img src={img ? img : "/placeholder.jpg"} alt="" />
+        <div className={styles["content"]}>
+          <h4 className={crimsonPro.className}>{title}</h4>
+          {date && (
+            <div className={styles["date"]}>
+              <img src="/icons/calendar.svg" alt="calendar icon" />
+              <p>{date}</p>
+            </div>
+          )}
+          <p>{text}</p>
+        </div>
+      </a>
+    </li>
   );
 };

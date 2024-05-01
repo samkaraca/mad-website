@@ -13,8 +13,14 @@ export const HomePage = () => {
         <img src="/massey-building.jpg" alt="Campus photo" />
         <div className={styles["white-background"]}>
           <div className={styles["readable"]}>
-            <section className={styles["welcome-text"]}>
-              <h1 className={`bottom-line ${crimsonPro.className}`}>
+            <section
+              className={styles["welcome-text"]}
+              aria-labelledby="welcome-to-mad-heading"
+            >
+              <h1
+                id="welcome-to-mad-heading"
+                className={`bottom-line ${crimsonPro.className}`}
+              >
                 Welcome to MAD
               </h1>
               <p>
