@@ -24,13 +24,14 @@ export const Layout = ({ children }: { children: ReactNode }) => {
     } else {
       document.getElementById("app")?.classList.add(appNavOpenClassName);
       document.getElementById("nav")?.classList.add(navigationNavOpenClassName);
+      document.getElementById("first-nav-menu-item")?.focus();
     }
   }, [isNavOpen]);
 
   return (
     <div id="app" className={`${lato.className} ${styles["app"]}`}>
       <Header isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-      <Navigation path={path} />
+      <Navigation path={path} isNavOpen={isNavOpen} />
       <div className={styles["main"]}>
         <Overlay isOpen={isNavOpen} onClick={() => setIsNavOpen(false)} />
         {children}

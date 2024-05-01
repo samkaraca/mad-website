@@ -14,14 +14,16 @@ export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
         {isNavOpen ? (
           <button
             onClick={() => setIsNavOpen(!isNavOpen)}
-            aria-label="Close Menu Button"
+            aria-label="Navigation menu"
+            aria-expanded={isNavOpen}
           >
             <img src="/icons/close.svg" alt="Close icon" />
           </button>
         ) : (
           <button
             onClick={() => setIsNavOpen(!isNavOpen)}
-            aria-label="Menu Button"
+            aria-label="Navigation menu"
+            aria-expanded={isNavOpen}
           >
             <img src="/icons/menu.svg" alt="Menu icon" />
           </button>
@@ -31,7 +33,6 @@ export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
           srcSet="/massey-logo.png"
           alt="Logo of Massey University"
         />
-        {/* <h1>Management, Analytics, Decision Making</h1> */}
       </section>
     </header>
   );

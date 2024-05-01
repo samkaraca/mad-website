@@ -1,6 +1,5 @@
-import { crimsonPro } from "@/fonts";
+import { crimsonPro, lato } from "@/fonts";
 import styles from "./latest-news.module.scss";
-import { useState } from "react";
 
 export const LatestNews = () => {
   return (
@@ -8,7 +7,7 @@ export const LatestNews = () => {
       aria-labelledby="news-list-heading"
       className={styles["latest-news"]}
     >
-      <h3 id="news-list-heading" className={`section-title`}>
+      <h3 id="news-list-heading" className={`section-title ${lato.className}`}>
         THE LATEST FROM MAD
       </h3>
       <ul className={styles["news-cards"]}>
