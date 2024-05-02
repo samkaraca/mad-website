@@ -1,5 +1,4 @@
 .overlay {
-  pointer-events: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -12,7 +11,7 @@
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-.overlay.overlay-open {
+.overlay.overlay-visible {
   opacity: 0.5;
   visibility: visible;
   transition: opacity 0.5s, visibility 0s 0s;

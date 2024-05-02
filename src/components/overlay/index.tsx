@@ -10,7 +10,9 @@ export const Overlay = ({
   return (
     <div
       onClick={onClick}
-      className={`${styles["overlay"]} ${isOpen ? styles["overlay-open"] : ""}`}
+      className={`${styles["overlay"]} ${
+        isOpen ? styles["overlay-visible"] : ""
+      }`}
     />
   );
 };
