@@ -1,17 +1,23 @@
 import { crimsonPro, jost } from "@/fonts";
 import styles from "./footer.module.scss";
 import { Overlay } from "@/components/overlay";
+import { HamburgerMenuStatus } from "@/hooks/useHamburgerMenu";
+
+interface Props {
+  hamburgerMenuStatus: HamburgerMenuStatus;
+  setHamburgerMenuStatus: (value: HamburgerMenuStatus) => HamburgerMenuStatus;
+}
 
 export const Footer = ({
-  isOverlayOpen,
-  onOverlayClick,
-}: {
-  isOverlayOpen: boolean;
-  onOverlayClick: VoidFunction;
-}) => {
+  hamburgerMenuStatus,
+  setHamburgerMenuStatus,
+}: Props) => {
   return (
     <footer id="footer" className={styles["footer"]}>
-      <Overlay isOpen={isOverlayOpen} onClick={onOverlayClick} />
+      <Overlay
+        isOpen={hamburgerMenuStatus === "open"}
+        onClick={() => setHamburgerMenuStatus("closed")}
+      />
       <section className={`${styles["contact"]}`}>
         <h2 className={`${jost.className}`}>CONTACT INFO</h2>
         <div className={styles["divider"]} />

@@ -1,37 +1,46 @@
 import { Overlay } from "@/components/overlay";
 import styles from "./header.module.scss";
+import { HamburgerMenuStatus } from "@/hooks/useHamburgerMenu";
 
 interface Props {
-  isNavOpen: boolean;
-  setIsNavOpen: (isNavOpen: boolean) => void;
+  hamburgerMenuStatus: HamburgerMenuStatus;
+  setHamburgerMenuStatus: (value: HamburgerMenuStatus) => HamburgerMenuStatus;
 }
 
-export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
+export const Header = ({
+  hamburgerMenuStatus,
+  setHamburgerMenuStatus,
+}: Props) => {
   return (
     <header id="header" className={styles["header"]}>
-      <Overlay isOpen={isNavOpen} onClick={() => setIsNavOpen(false)} />
+      <Overlay
+        isOpen={hamburgerMenuStatus === "open"}
+        onClick={() => setHamburgerMenuStatus("closed")}
+      />
       <section className={styles["title-bar"]}>
-        {isNavOpen ? (
+        {hamburgerMenuStatus === "open" ? (
           <button
-            onClick={() => setIsNavOpen(!isNavOpen)}
+            onClick={() => setHamburgerMenuStatus("closed")}
             aria-label="Navigation menu"
-            aria-expanded={isNavOpen}
+            aria-expanded={true}
           >
             <img src="/icons/close.svg" alt="Close icon" />
           </button>
         ) : (
-          <button
-            onClick={() => setIsNavOpen(!isNavOpen)}
-            aria-label="Navigation menu"
-            aria-expanded={isNavOpen}
-          >
-            <img src="/icons/menu.svg" alt="Menu icon" />
-          </button>
+          hamburgerMenuStatus === "closed" && (
+            <button
+              onClick={() => setHamburgerMenuStatus("open")}
+              aria-label="Navigation menu"
+              aria-expanded={false}
+            >
+              <img src="/icons/menu.svg" alt="Menu icon" />
+            </button>
+          )
         )}
         <a href="https://www.massey.ac.nz/">
           <img
             className={styles["logo"]}
-            srcSet="/massey-logo.png"
+            src="/massey-logo.png"
             alt="Logo of Massey University"
           />
         </a>

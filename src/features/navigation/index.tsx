@@ -1,15 +1,22 @@
 import { lato } from "@/fonts";
 import styles from "./navigation.module.scss";
+import { HamburgerMenuStatus } from "@/hooks/useHamburgerMenu";
 
 export const Navigation = ({
   path,
-  isNavOpen,
+  hamburgerMenuStatus,
 }: {
   path: string;
-  isNavOpen: boolean;
+  hamburgerMenuStatus: HamburgerMenuStatus;
 }) => {
   return (
-    <nav id="nav" className={`${styles["nav"]}`} aria-hidden={!isNavOpen}>
+    <nav
+      id="nav"
+      className={`${styles["nav"]} ${
+        hamburgerMenuStatus === "open" ? styles["hamburger-menu-visible"] : ""
+      }`}
+      aria-hidden={hamburgerMenuStatus !== "open"}
+    >
       <h2 className={lato.className}>MENU</h2>
       <a
         className={styles["massey-logo-link"]}
