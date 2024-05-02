@@ -50,7 +50,6 @@ const data: Data = {
           return (
             <div key={year} className={className}>
               <h2>{year}</h2>
-                <hr></hr>
                 <ul>{(data[year] as string[]).map((ref):any => {
                     return(<li key={ref}>{ref}</li>)
                 } 

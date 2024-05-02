@@ -45,7 +45,7 @@ export default function AboutUs() {
         </h1>
         <img
           src="https://dwvt5wwshu97q.cloudfront.net/accounts/485/files/01HMATSS8X0RZVT0KY29FQG7FE/350522-preview.webp?v=63872738827"
-          alt="Oç"
+          alt="People"
         />
         <div className={styles["white-background"]}>
           <div className={styles["readable"]}>

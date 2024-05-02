@@ -13,7 +13,7 @@ $themebox-red: #F37021;
 $themebox-red-dark: #B42217;
 */
 
-$themebox-green-light: white;
+$themebox-green-light: rgb(255, 246, 232);
 $themebox-green: gv.$secondary-color;
 $themebox-green-dark: black;
 
@@ -72,6 +72,7 @@ $themebox-red-dark: #004B8D;
     padding: 1.2rem 3rem 1rem;
     h2{
         font-size: 2rem;
+        color: #935f05;
     }
     ul{
         font-size: 1rem;
@@ -82,6 +83,7 @@ $themebox-red-dark: #004B8D;
     }
     hr{
         border-width: 0.06rem;
+        border-color: #935f05;
     }
 }
 
