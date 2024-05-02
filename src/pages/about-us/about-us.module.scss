@@ -1,7 +1,6 @@
 @use "../../styles/variables.scss" as gv;
 
-
-.welcome-text{
+.welcome-text {
   text-decoration: underline;
   text-decoration-color: gv.$secondary-color;
   text-decoration-thickness: 0.2rem;
@@ -43,6 +42,7 @@
   > h1 {
     font-size: calc(2.5rem * var(--100-to-70));
     margin-bottom: 2rem;
+    margin-left: 1rem;
     margin-top: calc(0.5rem * var(--100-to-90));
   }
 
@@ -53,9 +53,9 @@
 
 .profile-display {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.2rem;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .profile-card {
@@ -64,13 +64,13 @@
   justify-content: flex-start;
   width: 100%;
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0.1rem;
   box-sizing: border-box;
 }
 @media (max-width: 750px) {
   .profile-display {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
