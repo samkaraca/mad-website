@@ -1,12 +1,14 @@
-import { crimsonPro } from "@/fonts";
 import styles from "./latest-news.module.scss";
-import { useState } from "react";
+import { NewsCard } from "@/components/news-card";
 
 export const LatestNews = () => {
   return (
-    <section className={styles["latest-news"]}>
+    <section
+      aria-label="Latest news from MAD group"
+      className={styles["latest-news"]}
+    >
       <h3 className={`section-title`}>THE LATEST FROM MAD</h3>
-      <section className={styles["news-cards"]}>
+      <ul className={styles["news-cards"]}>
         <NewsCard
           link="/news/1"
           title="MAD’s New Website"
@@ -24,38 +26,5 @@ export const LatestNews = () => {
         />
       </ul>
     </section>
-  );
-};
-
-const NewsCard = ({
-  img,
-  title,
-  text,
-  date,
-  link,
-}: {
-  img?: string;
-  title: string;
-  text: string;
-  date?: string;
-  link?: string;
-}) => {
-  return (
-    <a
-      href={link}
-      className={`${styles["news-card"]} ${link ? styles["clickable"] : ""}`}
-    >
-      <img src={img ? img : "/placeholder.jpg"} alt="" />
-      <section className={styles["content"]}>
-        <h4 className={crimsonPro.className}>{title}</h4>
-        {date && (
-          <section className={styles["date"]} aria-label="date">
-            <img src="/calendar.svg" alt="calendar icon" />
-            <p>{date}</p>
-          </section>
-        )}
-        <p>{text}</p>
-      </section>
-    </a>
   );
 };
