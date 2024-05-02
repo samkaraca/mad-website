@@ -9,7 +9,7 @@ export const Navigation = ({
   path: string;
   hamburgerMenuStatus: HamburgerMenuStatus;
 }) => {
-  const tabIndex = hamburgerMenuStatus === "open" ? undefined : -1;
+  const tabIndex = hamburgerMenuStatus === "closed" ? -1 : undefined;
 
   return (
     <nav
