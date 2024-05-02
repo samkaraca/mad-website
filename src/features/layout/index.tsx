@@ -15,8 +15,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const appNavOpenClassName = styles["nav-open"];
     const navigationNavOpenClassName = navigationStyles["nav-open"];
-    const className = document.getElementById("app")?.className;
-    if (className?.includes(appNavOpenClassName)) {
+    if (!isNavOpen) {
       document.getElementById("app")?.classList.remove(appNavOpenClassName);
       document
         .getElementById("nav")
