@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as gv;
+
 .app {
   min-height: 100vh;
   display: grid;
@@ -5,7 +7,7 @@
     "header header"
     "nav main"
     "nav footer";
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: gv.$navigation-menu-width 1fr;
   grid-template-rows: auto 1fr auto;
   transition: grid-template-columns 0.5s;
 }
@@ -25,6 +27,6 @@
   }
 
   .app.nav-visible {
-    grid-template-columns: 260px 100%;
+    grid-template-columns: gv.$navigation-menu-width 100%;
   }
 }
