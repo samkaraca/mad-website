@@ -10,24 +10,25 @@ export const NewsPage = () => {
           <h1 id="news-heading" className={crimsonPro.className}>
             News
           </h1>
+          <img src="/default-bg-2.svg" alt="Banner" />
         </div>
         <ul className={styles["news-container"]}>
           <NewsCard
-            vertical
+            className={styles["news-card"]}
             link="/news/1"
             title="MAD’s New Website"
             date="12/12/2021"
             text="Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders."
           />
           <NewsCard
-            vertical
+            className={styles["news-card"]}
             link="/news/1"
             title="MAD’s New Website"
             date="12/12/2021"
             text="Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders."
           />
           <NewsCard
-            vertical
+            className={styles["news-card"]}
             link="/news/1"
             title="MAD’s New Website"
             date="12/12/2021"
@@ -38,24 +39,3 @@ export const NewsPage = () => {
     </main>
   );
 };
-
-// const NewsCard = () => {
-//   return (
-//     <li>
-//       <article className={styles["news-card"]}>
-//         <img src="https://via.placeholder.com/150" alt="" />
-//         <section className={`${styles["texts"]}`}>
-//           <h2 className={`bottom-line ${crimsonPro.className}`}>
-//             News Title Bakalım Ne Olacak
-//           </h2>
-//           <p>
-//             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique,
-//             aspernatur? Repudiandae vero, quia mollitia in velit ratione
-//             suscipit delectus exercitationem soluta quam, assumenda rerum. Ipsum
-//             ab temporibus eos deserunt dignissimos?
-//           </p>
-//         </section>
-//       </article>
-//     </li>
-//   );
-// };

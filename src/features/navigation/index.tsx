@@ -10,8 +10,13 @@ export const Navigation = ({
 }) => {
   return (
     <nav id="nav" className={`${styles["nav"]}`} aria-hidden={!isNavOpen}>
-      <h2>MENU</h2>
-      <img src="/massey-colorful.png" alt="Logo of University of Massey" />
+      <h2 className={lato.className}>MENU</h2>
+      <a
+        className={styles["massey-logo-link"]}
+        href="https://www.massey.ac.nz/"
+      >
+        <img src="/massey-colorful.png" alt="Logo of University of Massey" />
+      </a>
       <ul className={`${styles["links"]}`}>
         <Link
           isFirstLink={true}
@@ -21,11 +26,11 @@ export const Navigation = ({
         />
         <Link isActive={path === "/news"} title="News" link="/news" />
         <Link isActive={path === "/outputs"} title="Outputs" link="/outputs" />
-        <Link
+        {/* <Link
           isActive={path === "/projects"}
           title="Projects"
           link="/projects"
-        />
+        /> */}
         <Link
           isActive={path === "/about-us"}
           title="About Us"

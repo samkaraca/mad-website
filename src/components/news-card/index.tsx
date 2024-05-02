@@ -6,22 +6,22 @@ export const NewsCard = ({
   text,
   date,
   link,
-  vertical,
+  className,
 }: {
   img?: string;
   title: string;
   text: string;
   date?: string;
   link?: string;
-  vertical?: boolean;
+  className?: string;
 }) => {
   return (
     <li>
       <a
         href={link}
-        className={`${styles["news-card"]} ${
-          vertical ? styles["vertical"] : ""
-        } ${link ? styles["clickable"] : ""}`}
+        className={`${styles["news-card"]} ${className} ${
+          link ? styles["clickable"] : ""
+        }`}
       >
         <img src={img ? img : "/placeholder.jpg"} alt="" />
         <div className={styles["content"]}>

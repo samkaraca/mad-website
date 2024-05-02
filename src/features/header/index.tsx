@@ -28,11 +28,13 @@ export const Header = ({ isNavOpen, setIsNavOpen }: Props) => {
             <img src="/icons/menu.svg" alt="Menu icon" />
           </button>
         )}
-        <img
-          className={styles["logo"]}
-          srcSet="/massey-logo.png"
-          alt="Logo of Massey University"
-        />
+        <a href="https://www.massey.ac.nz/">
+          <img
+            className={styles["logo"]}
+            srcSet="/massey-logo.png"
+            alt="Logo of Massey University"
+          />
+        </a>
       </section>
     </header>
   );
