@@ -17,7 +17,7 @@ export const Navigation = ({
       className={`${styles["nav"]} ${
         hamburgerMenuStatus === "open" ? styles["hamburger-menu-visible"] : ""
       }`}
-      aria-hidden={hamburgerMenuStatus !== "open"}
+      aria-hidden={hamburgerMenuStatus === "closed"}
     >
       <h2 className={lato.className}>MENU</h2>
       <a
