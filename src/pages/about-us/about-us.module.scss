@@ -9,8 +9,6 @@
 
 .content {
   width: 70%;
-  margin-inline: 2rem;
-  margin-top: 2rem;
 
   > h1:first-child {
     max-width: 90%;
@@ -32,7 +30,6 @@
 
 .white-background {
   background-color: white;
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +43,7 @@
   > h1 {
     font-size: calc(2.5rem * var(--100-to-70));
     margin-bottom: 2rem;
-    margin-top: calc(1rem * var(--100-to-90));
+    margin-top: calc(0.5rem * var(--100-to-90));
   }
 
   > p {

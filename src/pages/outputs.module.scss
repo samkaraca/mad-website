@@ -38,9 +38,10 @@ $themebox-red-dark: #004B8D;
 
 .content{
     background-color: white;
-    padding: 0rem 2rem;
     h1{
-        padding-bottom: 0.2rem;
+        font-size: 2.8rem;
+        padding-bottom: 2rem;
+        padding-top: 0rem;
     }
 }
 
@@ -57,15 +58,15 @@ $themebox-red-dark: #004B8D;
     flex-direction: column;
     gap: 0.4rem;
     border-top: 0.5rem solid;
-    padding: 1.2rem 3rem 1rem;
+    padding: calc(1.2rem * var(--100-to-50)) calc(3rem * var(--100-to-50)) calc(1rem * var(--100-to-50));
     h2{
-        font-size: 2rem;
+        font-size: calc(2rem * var(--100-to-80));
         color: #935f05;
     }
     ul{
-        font-size: 1rem;
+        font-size: calc(1rem * var(--100-to-80));
         li{
-            padding: 0.5rem 0rem;
+            padding: calc(0.5rem * var(--100-to-80)) 0rem;
             margin-left: -1rem;
         }
     }

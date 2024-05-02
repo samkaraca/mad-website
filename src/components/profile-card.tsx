@@ -12,7 +12,7 @@ interface Data {
 
 export default function ProfileCard(props: Data) {
     return (
-        <div className={styles["profile-card"]}>
+        <a className={styles["profile-card"]} href="/about-us/david">
 
             <div className={styles["profile-frame"]}>
                 <img src={props.imgsrc}></img>
@@ -47,6 +47,6 @@ export default function ProfileCard(props: Data) {
                     </div>}
                 <hr />
             </div>
-        </div>
+        </a>
     )
 }

@@ -25,7 +25,7 @@ const data: AcademicProfile = {
     "personalWebsite": "example.edu/davidpauleen",
     "socialMedia": "@dpauleenmad",
     "researchInterests": ["Medieval Europe", "Women's History", "Manuscript Studies"],
-    "about": "Professor Pauleen is a historian specializing in the study of medieval Europe. His work focuses on the experiences of women during the Middle Ages, and she is particularly interested in the intersection of gender, religion, and power.",
+    "about": "Professor Pauleen is a historian specializing in the study of medieval Europe. His work focuses on the experiences of women during the Middle Ages, and he is particularly interested in the intersection of gender, religion, and power.",
     "bookChapters": ["Gressel, S., Pauleen, D. J., & Taskin, N. (2020). Management Decision-Making, Big Data and Analytics. SAGE.",
         "Intezari, A., & Pauleen, D. (2018). Wisdom, analytics and wicked problems: Integral decision making for the data age. Taylor & Francis.",
         "Pauleen, D., & Kupers, W. (2013). A handbook of practical wisdom: Leadership, organization and integral business practice. Gower. [Edited Book] Authored by: Pauleen, D. Edited by: Pauleen, D.",
