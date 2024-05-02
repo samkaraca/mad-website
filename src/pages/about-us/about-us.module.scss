@@ -1,21 +1,5 @@
 @use "../../styles/variables.scss" as gv;
 
-.layout {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
-}
-
-.backgroundBanner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100vh;
-  background-color: gv.$primary-color;
-}
 
 .welcome-text{
   text-decoration: underline;

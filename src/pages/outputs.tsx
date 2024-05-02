@@ -1,3 +1,4 @@
+import { DefaultMainContainer } from "@/components/default-main-container";
 import styles from "./outputs.module.scss";
 
 interface Data {
@@ -35,10 +36,7 @@ const data: Data = {
     const years = Object.keys(data).sort((a, b) => b.localeCompare(a)); // Sort years descending
     
     return (
-    <div className = {styles["layout"]}>
-    <div className={styles["backgroundBanner"]} />
-    
-    <img src="https://dwvt5wwshu97q.cloudfront.net/accounts/485/files/01HMATVWR78T372K5RYYTV08W1/356888-preview.webp?v=63872738323"></img>
+    <DefaultMainContainer title="Outputs" image="/output-bg.jpg" imageAlt="Campus view">
     <div className = {styles["content"]}>
     <h1>All Publications By The MAD Research Group</h1>
       <div className = {styles["output-list"]}>
@@ -59,6 +57,6 @@ const data: Data = {
         })}
         </div>
       </div>
-      </div>
+      </DefaultMainContainer>
     );
   }
