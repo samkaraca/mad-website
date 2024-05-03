@@ -8,6 +8,11 @@
   > h3 {
     font-size: calc(1.2rem * var(--100-to-90));
   }
+
+  > .see-all-news-link {
+    font-size: 1.2rem;
+    color: gv.$primary-color;
+  }
 }
 
 .news-cards {
@@ -17,6 +22,7 @@
   flex-direction: column;
   gap: 2rem;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 // NEWSCARD COMPONENT

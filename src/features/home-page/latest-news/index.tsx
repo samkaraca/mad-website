@@ -2,6 +2,7 @@ import { INewsCard } from "@/types/news-card";
 import styles from "./latest-news.module.scss";
 import { NewsCard } from "@/components/news-card";
 import { lato } from "@/fonts";
+import Link from "next/link";
 
 export const LatestNews = ({ news }: { news: INewsCard[] }) => {
   return (
@@ -25,6 +26,9 @@ export const LatestNews = ({ news }: { news: INewsCard[] }) => {
           );
         })}
       </ul>
+      <Link className={styles["see-all-news-link"]} href="/news">
+        See all news from MAD group...
+      </Link>
     </section>
   );
 };

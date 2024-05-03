@@ -1,16 +1,13 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import { HomePage } from "@/features/home-page";
 import path from "path";
 import { promises as fs } from "fs";
 import { INewsCard } from "@/types/news-card";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export async function getStaticProps() {
   const newsHtmlPath = path.join(process.cwd(), `public/db/news.json`);
   const newsJsonString = await fs.readFile(newsHtmlPath, "utf8");
-  const news = JSON.parse(newsJsonString);
+  const news = JSON.parse(newsJsonString).slice(0, 3);
 
   return {
     props: {
