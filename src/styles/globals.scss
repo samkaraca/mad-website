@@ -35,6 +35,9 @@ a {
 
 .section-title {
   padding: 0.4rem;
+  padding-inline: 1rem;
+  font-size: 1.2rem !important;
+  font-weight: 700;
   background-color: gv.$secondary-color;
   width: max-content;
 }

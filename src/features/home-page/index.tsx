@@ -2,8 +2,9 @@ import { crimsonPro } from "@/fonts";
 import styles from "./home-page.module.scss";
 import { LatestNews } from "./latest-news";
 import { DefaultMainContainer } from "@/components/default-main-container";
+import { INewsCard } from "@/types/news-card";
 
-export const HomePage = () => {
+export const HomePage = ({ news }: { news: INewsCard[] }) => {
   return (
     <DefaultMainContainer
       image="/massey-building.jpg"
@@ -35,7 +36,7 @@ export const HomePage = () => {
             effect of the digital divide.
           </p>
         </section>
-        <LatestNews />
+        <LatestNews news={news} />
       </div>
     </DefaultMainContainer>
   );

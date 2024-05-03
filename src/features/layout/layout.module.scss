@@ -7,7 +7,9 @@
     "header header"
     "nav main"
     "nav footer";
-  grid-template-columns: gv.$navigation-menu-width 1fr;
+  grid-template-columns: gv.$navigation-menu-width calc(
+      100% - gv.$navigation-menu-width
+    );
   grid-template-rows: auto 1fr auto;
   transition: grid-template-columns 0.5s;
 }

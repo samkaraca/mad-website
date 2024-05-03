@@ -6,26 +6,16 @@
   align-items: center;
 }
 
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  min-height: 17rem;
-  background-color: gv.$primary-color;
-  width: 100%;
-
-  > h1 {
-    max-width: calc(gv.$readable-content-max-width * 1.2);
-    padding-inline: calc(3rem * var(--100-to-70));
-    padding-block: calc(4rem * var(--100-to-80));
-    font-size: calc(3rem * var(--100-to-80));
-  }
-}
-
 .news {
   padding: calc(3rem * var(--100-to-70));
   font-size: calc(1.3rem * var(--100-to-80));
   max-width: gv.$readable-content-max-width;
   margin-bottom: calc(4rem * var(--100-to-80));
+}
+
+.banner {
+  > h1 {
+    text-align: left;
+    font-size: calc(4rem * var(--100-to-60)) !important;
+  }
 }
