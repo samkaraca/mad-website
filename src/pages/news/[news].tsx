@@ -1,23 +1,17 @@
 import { NewsArticlePage } from "@/features/news-article-page";
 import Head from "next/head";
-import path from "path";
-import { promises as fs } from "fs";
 import { INewsCard } from "@/types/news-card";
+import { readHtml, readNews } from "@/utils/read-file";
 
 export async function getStaticPaths() {
-  let paths = [];
-
-  try {
-    const newsHtmlPath = path.join(process.cwd(), `public/db/news.json`);
-    const jsonContent = await fs.readFile(newsHtmlPath, "utf8");
-    const news = JSON.parse(jsonContent).map((news: any) => news.fileName);
-    paths = news.map((fileName: string) => ({ params: { news: fileName } }));
-  } catch (error) {
-    console.error("Error reading news json file", error);
-  }
-
   return {
-    paths,
+    paths: (await readNews()).map((news) => {
+      return {
+        params: {
+          news: news.fileName,
+        },
+      };
+    }),
     fallback: false,
   };
 }
@@ -25,49 +19,14 @@ export async function getStaticPaths() {
 export async function getStaticProps(context: any) {
   const newsHtmlFileName = context.params.news;
 
-  // Read the news html file
-  let htmlContent = "";
-  const newsHtmlPath = path.join(
-    process.cwd(),
-    `public/html/${newsHtmlFileName}`
-  );
-  const defaultNewsHtmlPath = path.join(
-    process.cwd(),
-    `public/html/default-news.html`
-  );
-
-  try {
-    htmlContent = await fs.readFile(newsHtmlPath, "utf8");
-  } catch (error) {
-    console.error("Error reading news html file", error);
-    try {
-      htmlContent = await fs.readFile(defaultNewsHtmlPath, "utf8");
-    } catch (error) {
-      console.error("Error reading default news html file", error);
-    }
-  }
-
-  // Get the title and image of the news
-  let news = undefined;
-
-  try {
-    const newsJsonPath = path.join(process.cwd(), "public/db/news.json");
-    const newsJsonString = await fs.readFile(newsJsonPath, "utf8");
-    const newsJson = JSON.parse(newsJsonString);
-    const theNewsJson = newsJson.find(
-      (news: any) => news.fileName === newsHtmlFileName
-    );
-    if (newsJson) {
-      news = theNewsJson;
-    }
-  } catch (error) {
-    console.error("Error reading news json file", error);
-  }
+  const newsJson = await readNews();
+  const newsHtml = await readHtml(`public/html/${newsHtmlFileName}`);
+  const news = newsJson.find((news: any) => news.fileName === newsHtmlFileName);
 
   return {
     props: {
-      news: news ? news : {},
-      htmlContent,
+      news: news || {},
+      htmlContent: newsHtml,
     },
   };
 }

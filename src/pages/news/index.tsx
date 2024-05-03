@@ -1,17 +1,12 @@
 import { NewsPage } from "@/features/news-page";
 import Head from "next/head";
-import path from "path";
-import { promises as fs } from "fs";
 import { INewsCard } from "@/types/news-card";
+import { readFile, readNews } from "@/utils/read-file";
 
 export async function getStaticProps() {
-  const newsHtmlPath = path.join(process.cwd(), `public/db/news.json`);
-  const newsJsonString = await fs.readFile(newsHtmlPath, "utf8");
-  const news = JSON.parse(newsJsonString);
-
   return {
     props: {
-      news,
+      news: await readNews(),
     },
   };
 }
