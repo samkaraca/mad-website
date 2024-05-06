@@ -5,6 +5,7 @@ import { IPersonCard } from "@/types/person-card";
 import { IOutput } from "@/types/output";
 import { ICourse } from "@/types/course";
 import { IGrant } from "@/types/grant";
+import { IProjectsSection } from "@/types/projects-page";
 
 export const readFile = async (
   relativePath: string
@@ -56,6 +57,10 @@ export const readCourses = async (): Promise<ICourse[]> => {
 
 export const readGrants = async (): Promise<IGrant[]> => {
   return await readJsonArray("public/db/grants.json");
+};
+
+export const readProjects = async (): Promise<IProjectsSection[]> => {
+  return await readJsonArray("public/db/projects.json");
 };
 
 export const readHtml = async (relativePath: string): Promise<string> => {
