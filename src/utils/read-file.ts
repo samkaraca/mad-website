@@ -3,6 +3,8 @@ import { promises as fs } from "fs";
 import { INewsCard } from "@/types/news-card";
 import { IPersonCard } from "@/types/person-card";
 import { IOutput } from "@/types/output";
+import { ICourse } from "@/types/course";
+import { IGrant } from "@/types/grant";
 
 export const readFile = async (
   relativePath: string
@@ -46,6 +48,14 @@ export const readPeople = async (): Promise<IPersonCard[]> => {
 
 export const readOutputs = async (): Promise<IOutput[]> => {
   return await readJsonArray("public/db/outputs.json");
+};
+
+export const readCourses = async (): Promise<ICourse[]> => {
+  return await readJsonArray("public/db/courses.json");
+};
+
+export const readGrants = async (): Promise<IGrant[]> => {
+  return await readJsonArray("public/db/grants.json");
 };
 
 export const readHtml = async (relativePath: string): Promise<string> => {

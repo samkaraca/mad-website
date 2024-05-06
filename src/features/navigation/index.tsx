@@ -47,12 +47,24 @@ export const Navigation = ({
           title="Outputs"
           link="/outputs"
         />
-        {/* <Link
+        <Link
           tabIndex={tabIndex}
           isActive={path === "/projects"}
           title="Projects"
           link="/projects"
-        /> */}
+        />
+        <Link
+          tabIndex={tabIndex}
+          isActive={path === "/teaching"}
+          title="Teaching"
+          link="/teaching"
+        />
+        <Link
+          tabIndex={tabIndex}
+          isActive={path === "/grants"}
+          title="Grants"
+          link="/grants"
+        />
         <Link
           tabIndex={tabIndex}
           isActive={path === "/about-us"}
