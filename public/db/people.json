@@ -1,11 +1,209 @@
 [
-  {
-    "name": "John Smith",
-    "title": "Lecturer",
-    "phone": "123-456-7890",
-    "email": "john.smith@example.com",
-    "building": "Room 101",
-    "image": "https://mad.massey.ac.nz/img/gloria.jpg",
-    "link": "https://www.massey.ac.nz/~j.smith"
-  }
+    {
+        "name": "Prof. David Pauleen",
+        "title": "Professor",
+        "image": "../david.jpg",
+        "email": "D.Pauleen@massey.ac.nz",
+        "building": "",
+        "phone": "+64 9-213 6385",
+        "link": ""
+    },
+    {
+        "name": "Dr. Kasuni Weerasinghe",
+        "title": "Senior Lecturer",
+        "image": "../kw.jpg",
+        "email": "kasuni.weerasinghe@aut.ac.nz",
+        "building": "",
+        "phone": "",
+        "link": "https://academics.aut.ac.nz/kasuni.weerasinghe"
+    },
+    {
+        "name": "Dr. Shafiq Alam",
+        "title": "Senior Lecturer",
+        "image": "../sa.jpg",
+        "email": "S.Alam1@massey.ac.nz",
+        "building": "05, QA3",
+        "phone": "+64 9-213 6262",
+        "link": "https://www.massey.ac.nz/massey/expertise/college-staff-lists/massey-business-school/school-of-management-staff.cfm?stref=009422"
+    },
+    {
+        "name": "Prof. James Arrowsmith",
+        "title": "Senior Lecturer",
+        "image": "../jim.jpg",
+        "email": "J.Arrowsmith@massey.ac.nz",
+        "building": "",
+        "phone": "+64 9-213 6390",
+        "link": "https://www.massey.ac.nz/massey/expertise/profile.cfm?stref=691040"
+    },
+    {
+        "name": "Dr. Christine Tan",
+        "title": "Senior Lecturer",
+        "image": "../christine.jpg",
+        "email": "",
+        "building": "QB2.19, Quad B",
+        "phone": "+64 9-213 6389",
+        "link": "https://www.massey.ac.nz/massey/expertise/college-staff-lists/massey-business-school/school-of-management-staff.cfm?stref=122722"
+    },
+    {
+        "name": "Dr. Gloria Liu",
+        "title": "Senior Lecturer",
+        "image": "../gloria.jpg",
+        "email": "",
+        "building": "217, QB",
+        "phone": "+64 9-213 6392",
+        "link": "https://www.massey.ac.nz/massey/expertise/college-staff-lists/massey-business-school/school-of-management-staff.cfm?stref=022722"
+    },
+    {
+        "name": "Dr. Melika Soleimani",
+        "title": "PhD",
+        "image": "../Melika.jpg",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": "https://www.massey.ac.nz/massey/expertise/phd-student-profiles/doctoral-my-story.cfm?studid=F%2BcvbF3fztM%3D"
+    },
+    {
+        "name": "Ji Yu (Maggie)",
+        "title": "PhD Student",
+        "image": "../yuji.jpg",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": ""
+    },
+    {
+        "name": "Mohamed Osman",
+        "title": "PhD Student",
+        "image": "",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": ""
+    },
+    {
+        "name": "Assoc. Prof. Shane Scahill",
+        "title": "External Co-Founder",
+        "image": "../shane.jpg",
+        "email": "s.scahill@auckland.ac.nz",
+        "building": "",
+        "phone": "+64 9-373 7599",
+        "link": "https://profiles.auckland.ac.nz/s-scahill"
+    },
+    {
+        "name": "Dr. Nazim Taskin",
+        "title": "Senior Lecturer, External Co-founder",
+        "image": "../nazim.jpg",
+        "email": "nazim.taskin@bogazici.edu.tr",
+        "building": "B217",
+        "phone": "",
+        "link": "https://mis.bogazici.edu.tr/content/nazim-taskin"
+    },
+    {
+        "name": "Dr. Ali Intezari Harsini",
+        "title": "Senior Lecturer, External Co-founder",
+        "image": "../Ali.jpg",
+        "email": "a.intezari@business.uq.edu.au",
+        "building": "Room 408, Joyce Ackroyd (37), St. Lucia Campus",
+        "phone": "+61 7 344 31249",
+        "link": "https://business.uq.edu.au/profile/3661/ali-intezari-harsini"
+    },
+    {
+        "name": "Dr. Hamed Jafarzadeh",
+        "title": "PhD",
+        "image": "../Hamed.jpg",
+        "email": "hamed.jafarzadeh@mq.edu.au",
+        "building": "",
+        "phone": "",
+        "link": "https://researchers.mq.edu.au/en/persons/mohammad-hamed-jafarzadeh"
+    },
+    {
+        "name": "Prof. Dursun Delen",
+        "title": "Associate Member",
+        "image": "../dursun.jpg",
+        "email": "dursun.delen@okstate.edu.",
+        "building": "",
+        "phone": " +1 918 594 8283",
+        "link": "https://business.okstate.edu/directory/136822.html"
+    },
+    {
+        "name": "Dr. Asil Oztekin",
+        "title": "Associate Member",
+        "image": "../asil.jpg",
+        "email": "Asil_Oztekin@uml.edu",
+        "building": "Pulichino Tong Business Center - 442",
+        "phone": "+1 (978) 934-2714",
+        "link": "https://www.uml.edu/MSB/faculty/Oztekin-Asil.aspx"
+    },
+    {
+        "name": "Dr. Ali Coskun",
+        "title": "Associate Member",
+        "image": "../coskun.jpeg",
+        "email": "ali.coskun@boun.edu.tr",
+        "building": "",
+        "phone": "",
+        "link": "https://mgmt.bogazici.edu.tr/tr/instructor/ali-coskun"
+    },
+    {
+        "name": "Dr. Caroline Keen",
+        "title": "Associate Member",
+        "image": "",
+        "email": "keenresearch@gmail.com",
+        "building": "",
+        "phone": "",
+        "link": "https://www.linkedin.com/in/carolinekeen/"
+    },
+    {
+        "name": "Dr. Mustafa Hayri Tongarlak",
+        "title": "Associate Member",
+        "image": "../hayri.jpeg",
+        "email": "tongarlak@boun.edu.tr",
+        "building": "",
+        "phone": "6521",
+        "link": "https://mgmt.bogazici.edu.tr/instructor/m-hayri-tongarlak"
+    },
+    {
+        "name": "Dr. Tiong-Thye Goh",
+        "title": "Associate Member",
+        "image": "../tiong-goh.jpg",
+        "email": "Tiong.Goh@vuw.ac.nz",
+        "building": "RH 409, Rutherford House",
+        "phone": "+64 4 472 1000",
+        "link": "https://www.victoria.ac.nz/sim/about/staff/tiong-goh"
+    },
+    {
+        "name": "Mustafa Coskun",
+        "title": "Associate Member",
+        "image": "../Mustafa.jpg",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": ""
+    },
+    {
+        "name": "Elif Tugba Aydinliyurt",
+        "title": "Associate Member",
+        "image": "../Elif.jpg",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": ""
+    },
+    {
+        "name": "Tyler Xue",
+        "title": "Associate Member",
+        "image": "../tyler.jpeg",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": "https://www.linkedin.com/in/tyler-xue-32a2ba91/"
+    },
+    {
+        "name": "Marsha Ma-Fairbrother",
+        "title": "Associate Member",
+        "image": "../marsha.jpeg",
+        "email": "",
+        "building": "",
+        "phone": "",
+        "link": "https://www.linkedin.com/in/marsha-ma-fairbrother-a9692468/"
+    }
 ]
