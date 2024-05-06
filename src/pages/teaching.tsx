@@ -12,7 +12,11 @@ export async function getStaticProps() {
 
 export default function Teaching({ courses }: { courses: ICourse[] }) {
   return (
-    <DefaultMainContainer image="" imageAlt="" title="Teaching">
+    <DefaultMainContainer
+      image="/teaching.jpg"
+      imageAlt="Students studying in a classroom"
+      title="Teaching"
+    >
       {courses.map((course) => {
         return (
           <section key={course.title}>

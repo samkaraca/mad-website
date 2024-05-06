@@ -6,21 +6,6 @@
   align-items: center;
 }
 
-.news-list {
-  --margin-inline: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  place-content: center;
-  gap: 3rem;
-  width: calc(100% - var(--margin-inline) * 2);
-  max-width: calc(gv.$readable-content-max-width * 1.5);
-  margin-inline: auto;
-  list-style: none;
-  padding-left: 0;
-}
-
 // NEWS CARD COMPONENT
 .news-card {
   height: 100%;
