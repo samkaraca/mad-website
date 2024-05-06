@@ -1,4 +1,4 @@
-export interface PersonCard {
+export interface IPersonCard {
   name: string;
   title: string;
   image?: string;

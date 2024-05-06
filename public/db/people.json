@@ -1,0 +1,11 @@
+[
+  {
+    "name": "John Smith",
+    "title": "Lecturer",
+    "phone": "123-456-7890",
+    "email": "john.smith@example.com",
+    "building": "Room 101",
+    "image": "https://mad.massey.ac.nz/img/gloria.jpg",
+    "link": "https://www.massey.ac.nz/~j.smith"
+  }
+]

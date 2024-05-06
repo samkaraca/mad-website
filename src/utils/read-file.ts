@@ -1,6 +1,8 @@
 import path from "path";
 import { promises as fs } from "fs";
 import { INewsCard } from "@/types/news-card";
+import { IPersonCard } from "@/types/person-card";
+import { IOutput } from "@/types/output";
 
 export const readFile = async (
   relativePath: string
@@ -17,15 +19,33 @@ export const readFile = async (
   return dataString;
 };
 
-export const readNews = async (): Promise<INewsCard[]> => {
-  let news = [];
-  const newsJsonString = await readFile("public/db/news.json");
+export const readJsonArray = async (relativePath: string): Promise<any[]> => {
+  let array = [];
+  const jsonString = await readFile(relativePath);
 
-  if (newsJsonString) {
-    news = JSON.parse(newsJsonString);
+  try {
+    const parsedJson = jsonString && JSON.parse(jsonString);
+
+    if (Array.isArray(parsedJson)) {
+      array = parsedJson;
+    }
+  } catch (error) {
+    console.error("Error parsing JSON array:", error);
   }
 
-  return news;
+  return array;
+};
+
+export const readNews = async (): Promise<INewsCard[]> => {
+  return await readJsonArray("public/db/news.json");
+};
+
+export const readPeople = async (): Promise<IPersonCard[]> => {
+  return await readJsonArray("public/db/people.json");
+};
+
+export const readOutputs = async (): Promise<IOutput[]> => {
+  return await readJsonArray("public/db/outputs.json");
 };
 
 export const readHtml = async (relativePath: string): Promise<string> => {
