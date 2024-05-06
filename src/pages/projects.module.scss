@@ -1,0 +1,8 @@
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates three columns */
+    grid-auto-rows: minmax(100px, auto); /* minimum height of each row but can grow */
+    grid-gap: 1rem; /* space between cards */
+    grid-auto-flow: dense; /* this is crucial for masonry-style layout */
+    padding: 20px;
+}

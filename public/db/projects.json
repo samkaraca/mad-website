@@ -1,14 +1,82 @@
 [
   {
     "title": "Ongoing Projects",
-    "projects": []
+    "projects": [
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders",
+        "description": "This project involves creating a survey to understand how different groups in New Zealand view new technologies. The focus is on capturing the social and technical aspects considered important by key stakeholders.",
+        "link": ""
+      },
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Decision Outcomes: Analytics with or without Intuition?",
+        "description": "This project examines the impact of intuition on decision-making compared to relying solely on data-driven analytics. It explores whether blending instinct with data analytics leads to better decision outcomes than using either approach alone.",
+        "link": ""
+      },
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Ubiquitous data, powerful analytics and embedded information systems: Preparing for tectonic shifts in business, government and society",
+        "description": "The objective of this study is to bring to the forefront the concerns, promises and issues that decision makers and thought leaders in business, government and society are grappling with as they integrate technology and information systems into all aspects of society. This study will adopt mixed method research where the extensive literature, interviews with experts in the field, both from academia and industry, will lead to development of a survey instrument. Data collected via the survey will be analyzed using advanced statistical methods.",
+        "link": ""
+      },
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Management, Analytics and Decision-making: The State of Play in NZ and Beyond",
+        "description": "This research proposes to take a closer look at the effects big data, analytics, and related technologies may have on managerial decision making: specifically 1) whether senior managers and decision makers believe that analytics can satisfactorily substitute for or augment human intuition, insight, judgment and wisdom; 2) whether senior managers and decision makers have the capability and willingness to use big data/analytics to best effect.",
+        "link": ""
+      },
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Does it matter to do it mindfully? Role of IT mindfulness in agile project management",
+        "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects.",
+        "link": ""
+      },
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Role of intuition and rationality in decision making",
+        "description": "The study seeks to identify when and how intuition or rationality should be prioritized to optimize decision outcomes.",
+        "link": ""
+      },
+      {
+        "image": "about-us-bg.jpg",
+        "title": "Big Analytics for Small Kiwis: Google Analytics in New Zealand",
+        "description": "This project focuses on the application of Google Analytics for small businesses in New Zealand, exploring its impact and utility in understanding customer behavior, enhancing online presence, and improving sales. It aims to provide insights into how small Kiwi businesses can effectively leverage big data tools like Google Analytics to drive growth and competitiveness in a digital economy.",
+        "link": ""
+      }
+    ]
   },
   {
     "title": "Project Proposals",
-    "projects": []
+    "projects": [
+      {
+        "image": "https://example.com/image2.jpg",
+        "title": "Smart Agriculture Solutions",
+        "description": "Proposal for a project to develop IoT solutions tailored for precision farming and increased crop yield.",
+        "link": "https://example.com/smart-agriculture"
+      }
+    ]
   },
   {
     "title": "PhD Students Research Topics",
-    "projects": []
+    "projects": [
+      {
+        "image": "https://example.com/image3.jpg",
+        "title": "Quantum Computing Algorithms",
+        "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects. The focus is on how being present and aware influences decision-making processes, team dynamics, and project success in IT environments.",
+        "link": "https://example.com/quantum-computing"
+      }
+    ]
+  },
+  {
+    "title": "PhD Students Research Topics",
+    "projects": [
+      {
+        "image": "https://example.com/image3.jpg",
+        "title": "Quantum Computing Algorithms",
+        "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects. The focus is on how being present and aware influences decision-making processes, team dynamics, and project success in IT environments.",
+        "link": "https://example.com/quantum-computing"
+      }
+    ]
   }
 ]
