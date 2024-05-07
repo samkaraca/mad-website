@@ -3,43 +3,43 @@
     "title": "Ongoing Projects",
     "projects": [
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/nz.jpg",
         "title": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders",
         "description": "This project involves creating a survey to understand how different groups in New Zealand view new technologies. The focus is on capturing the social and technical aspects considered important by key stakeholders.",
         "link": ""
       },
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/king.jpg",
         "title": "Decision Outcomes: Analytics with or without Intuition?",
         "description": "This project examines the impact of intuition on decision-making compared to relying solely on data-driven analytics. It explores whether blending instinct with data analytics leads to better decision outcomes than using either approach alone.",
         "link": ""
       },
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/money.jpg",
         "title": "Ubiquitous data, powerful analytics and embedded information systems: Preparing for tectonic shifts in business, government and society",
         "description": "The objective of this study is to bring to the forefront the concerns, promises and issues that decision makers and thought leaders in business, government and society are grappling with as they integrate technology and information systems into all aspects of society. This study will adopt mixed method research where the extensive literature, interviews with experts in the field, both from academia and industry, will lead to development of a survey instrument. Data collected via the survey will be analyzed using advanced statistical methods.",
         "link": ""
       },
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/aircraft.jpg",
         "title": "Management, Analytics and Decision-making: The State of Play in NZ and Beyond",
         "description": "This research proposes to take a closer look at the effects big data, analytics, and related technologies may have on managerial decision making: specifically 1) whether senior managers and decision makers believe that analytics can satisfactorily substitute for or augment human intuition, insight, judgment and wisdom; 2) whether senior managers and decision makers have the capability and willingness to use big data/analytics to best effect.",
         "link": ""
       },
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/zen.jpeg",
         "title": "Does it matter to do it mindfully? Role of IT mindfulness in agile project management",
         "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects.",
         "link": ""
       },
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/intuition.jpeg",
         "title": "Role of intuition and rationality in decision making",
         "description": "The study seeks to identify when and how intuition or rationality should be prioritized to optimize decision outcomes.",
         "link": ""
       },
       {
-        "image": "about-us-bg.jpg",
+        "image": "thumbnails/seo.jpeg",
         "title": "Big Analytics for Small Kiwis: Google Analytics in New Zealand",
         "description": "This project focuses on the application of Google Analytics for small businesses in New Zealand, exploring its impact and utility in understanding customer behavior, enhancing online presence, and improving sales. It aims to provide insights into how small Kiwi businesses can effectively leverage big data tools like Google Analytics to drive growth and competitiveness in a digital economy.",
         "link": ""
@@ -50,32 +50,74 @@
     "title": "Project Proposals",
     "projects": [
       {
-        "image": "https://example.com/image2.jpg",
-        "title": "Smart Agriculture Solutions",
-        "description": "Proposal for a project to develop IoT solutions tailored for precision farming and increased crop yield.",
-        "link": "https://example.com/smart-agriculture"
-      }
-    ]
+        "image": "thumbnails/laser.jpeg",
+        "title": "Business leaders need tech skills",
+        "description": "This project explores the necessity of technical skills among business leaders, investigating how proficiency in technology affects leadership effectiveness, decision-making, and overall business performance.",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/efficient.jpeg",
+        "title": "Improving SME decision-making",
+        "description": "This project aims to enhance decision-making processes in small and medium-sized enterprises (SMEs) through targeted strategies and tools. It investigates which methods (e.g., data analytics, expert systems, or consultative frameworks) most effectively improve accuracy, efficiency, and outcome quality in SME decision-making.",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/maori.jpeg",
+        "title": "SMEs, practical wisdom and big data: integrating Maori Kaitiakitanga into business decision making",
+        "description": "This project examines the integration of Māori principles of kaitiakitanga (guardianship and sustainable management) into the decision-making processes of small and medium-sized enterprises (SMEs) utilizing big data. It seeks to explore how practical wisdom, informed by traditional Māori values, can complement modern big data analytics to enhance business practices, sustainability, and community engagement.",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/doors.jpg",
+        "title": "The Wicked Which: Where does the wicked problem begin and end?",
+        "description": "This project delves into the complex nature of wicked problems — issues that are difficult to define and have no clear solution or endpoint. It aims to identify the boundaries and origins of such problems, using case studies to illustrate how they evolve over time and interact with various factors. The study seeks to provide a deeper understanding of wicked problems to improve approaches to problem-solving in fields such as public policy, environmental management, and social planning.",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/train.jpeg",
+        "title": "Pushing back against technological solutionism - integrating wisdom traditions",
+        "description": "This project challenges the prevailing reliance on technology as the primary solution to societal problems, a concept known as technological solutionism. It advocates for the integration of wisdom traditions—long-established knowledge systems and philosophies—into modern problem-solving frameworks",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/poverty.jpeg",
+        "title": "Addressing Wicked Problems in the Age of Big Data: The Case of Child Poverty in New Zealand",
+        "description": "This project investigates how big data can be utilized to address the wicked problem of child poverty in New Zealand. It examines the complexities and multifaceted nature of child poverty, exploring how large datasets and advanced analytics can provide new insights and facilitate more effective interventions. The study aims to identify patterns, trends, and underlying factors contributing to child poverty, proposing data-driven strategies to mitigate its impact and contribute to long-term solutions.",
+        "link": ""
+      }]
   },
   {
     "title": "PhD Students Research Topics",
     "projects": [
       {
-        "image": "https://example.com/image3.jpg",
-        "title": "Quantum Computing Algorithms",
-        "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects. The focus is on how being present and aware influences decision-making processes, team dynamics, and project success in IT environments.",
-        "link": "https://example.com/quantum-computing"
-      }
-    ]
-  },
-  {
-    "title": "PhD Students Research Topics",
-    "projects": [
+        "image": "thumbnails/cargo.jpeg",
+        "title": "Thi Thanh Hoa Nguyen - Doctor of Philosophy",
+        "description": "TSupply Chain Visibility and Its Linkage to Decision-making Improvement: An Exploratory Study in the New Zealand Supply Chain Context",
+        "link": ""
+      },
       {
-        "image": "https://example.com/image3.jpg",
-        "title": "Quantum Computing Algorithms",
-        "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects. The focus is on how being present and aware influences decision-making processes, team dynamics, and project success in IT environments.",
-        "link": "https://example.com/quantum-computing"
+        "image": "thumbnails/knowledge.jpeg",
+        "title": "Yi-Mei Huang - Doctor of Philosophy",
+        "description": "The influence of personal knowledge management on individual decision making in healthcare medical treatment",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/decision.jpeg",
+        "title": "Simone Gressel - Doctor of Philosophy",
+        "description": "Management Decision Making in the Age of Big Data - An Exploration of the Roles of Analytics and Human Judgment",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/ai.jpeg",
+        "title": "Melika Soleimani - Doctor of Philosophy",
+        "description": "Stratgic decision making through artificial intelligence and human insight",
+        "link": ""
+      },
+      {
+        "image": "thumbnails/crowds.jpeg",
+        "title": "Ji Yu (Maggie) - Doctor of Philosophy",
+        "description": "Wisdom of the Crowds: Developing a Social Media Platform for Serious Research",
+        "link": ""
       }
     ]
   }

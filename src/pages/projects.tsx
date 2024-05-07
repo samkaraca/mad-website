@@ -1,7 +1,9 @@
 import React from 'react';
 import { IProjectsSection } from '@/types/projects-page';
 import ProjectCard from '@/components/project-card';
+import { DefaultCardGrid } from '@/components/default-card-grid';
 import { readProjects } from '@/utils/read-file';
+import { jost } from '@/fonts';
 import styles from "./projects.module.scss";
 
 export async function getStaticProps() {
@@ -14,15 +16,15 @@ export async function getStaticProps() {
 
 export default function Projects({ projectsSection }: { projectsSection: IProjectsSection[] }) {
   return (
-    <div>
+    <div className={styles["content"]}>
       {projectsSection.map((section, index) => (
         <div key={index}>
-          <h2 className={styles["title"]}>{section.title}</h2>
-          <div className={styles.projectsContainer}>
+          <h2 className={`${jost.className} ${styles["title"]}`}>{section.title}</h2>
+          <DefaultCardGrid>
           {section.projects.map((project, idx) => (
             <ProjectCard key={idx} project={project} />
           ))}
-          </div>
+          </DefaultCardGrid>
         </div>
       ))}
     </div>
