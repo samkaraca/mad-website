@@ -1,21 +1,13 @@
 import Link from "next/link";
 import styles from "./profile-card.module.scss";
 import { jost } from "@/fonts";
+import { IPersonCard } from "@/types/person-card";
 
-interface Data {
-  name: string;
-  title: string;
-  imgsrc?: string;
-  phone?: string;
-  email?: string;
-  building?: string;
-}
-
-export default function ProfileCard(props: Data) {
+export default function ProfileCard(props: IPersonCard) {
   return (
-    <Link className={styles["profile-card"]} href="/about-us/david">
+    <Link className={styles["profile-card"]} href={props.link || 'about-us'}>
       <div className={styles["profile-frame"]}>
-        <img src={props.imgsrc}></img>
+        <img src={props.image}></img>
       </div>
 
       <h3>{props.name}</h3>

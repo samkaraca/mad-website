@@ -13,17 +13,9 @@ $themebox-red: #F37021;
 $themebox-red-dark: #B42217;
 */
 
-$themebox-green-light: rgb(255, 246, 232);
-$themebox-green: gv.$secondary-color;
-$themebox-green-dark: black;
-
-$themebox-blue-light: #EBF6FF;
-$themebox-blue: #038FE8;
-$themebox-blue-dark: #004B8D;
-
-$themebox-red-light: #EBF6FF;
-$themebox-red: #038FE8;
-$themebox-red-dark: #004B8D;
+$themebox-light: rgb(255, 246, 232);
+$themebox: gv.$secondary-color;
+$themebox-dark: black;
 
 .backgroundBanner {
     position: absolute;
@@ -59,6 +51,15 @@ $themebox-red-dark: #004B8D;
     gap: 0.4rem;
     border-top: 0.5rem solid;
     padding: calc(1.2rem * var(--100-to-50)) calc(3rem * var(--100-to-50)) calc(1rem * var(--100-to-50));
+    background-color: $themebox-light;
+    border-color: $themebox;
+    color: $themebox-dark;
+    li{
+        color: $themebox-dark;
+    }
+    hr{
+        border-color: $themebox-dark;
+    }
     h2{
         font-size: calc(2rem * var(--100-to-80));
         color: #935f05;
@@ -73,41 +74,5 @@ $themebox-red-dark: #004B8D;
     hr{
         border-width: 0.06rem;
         border-color: #935f05;
-    }
-}
-
-.themed-container-1{
-    background-color: $themebox-green-light;
-    border-color: $themebox-green;
-    color: $themebox-green-dark;
-    li{
-        color: $themebox-green-dark;
-    }
-    hr{
-        border-color: $themebox-green-dark;
-    }
-}
-
-.themed-container-2{
-    background-color: $themebox-green-light;
-    border-color: $themebox-green;
-    color: $themebox-green-dark;
-    li{
-        color: $themebox-green-dark;
-    }
-    hr{
-        border-color: $themebox-green-dark;
-    }
-}
-
-.themed-container-3{
-    background-color: $themebox-green-light;
-    border-color: $themebox-green;
-    color: $themebox-green-dark;
-    li{
-        color: $themebox-green-dark;
-    }
-    hr{
-        border-color: $themebox-green-dark;
     }
 }

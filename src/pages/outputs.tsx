@@ -22,11 +22,6 @@ export default function Output({ outputs }: { outputs: IOutput[] }) {
         <h1>All Publications By The MAD Research Group</h1>
         <div className={styles["output-list"]}>
           {outputs.map((output, index) => {
-            // Calculate class name index, cycles through 1, 2, 3
-            const classNameIndex = (index % 3) + 1;
-            const className = `${styles["year-block"]} ${
-              styles["themed-container-" + classNameIndex]
-            }`;
             return (
               <div key={output.year} className={styles["year-block"]}>
                 <h2>{output.year}</h2>

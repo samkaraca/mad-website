@@ -1,6 +1,8 @@
 export interface IProject {
   image: string;
   title: string;
+  author?: string;
+  degree?: string;
   description: string;
   link?: string;
 }

@@ -91,32 +91,42 @@
     "projects": [
       {
         "image": "thumbnails/cargo.jpeg",
-        "title": "Thi Thanh Hoa Nguyen - Doctor of Philosophy",
-        "description": "TSupply Chain Visibility and Its Linkage to Decision-making Improvement: An Exploratory Study in the New Zealand Supply Chain Context",
+        "title": "TSupply Chain Visibility and Its Linkage to Decision-making Improvement: An Exploratory Study in the New Zealand Supply Chain Context",
+        "author": "Thi Thanh Hoa Nguyen",
+        "degree": "Doctor of Philosophy",
+        "description": "This exploratory study focuses on how increased supply chain visibility can enhance decision-making processes within New Zealand's supply chain networks. It examines the extent to which detailed insights into every stage of the supply chain—from sourcing and manufacturing to distribution and consumption—can improve operational efficiencies, risk management, and strategic planning.",
         "link": ""
       },
       {
         "image": "thumbnails/knowledge.jpeg",
-        "title": "Yi-Mei Huang - Doctor of Philosophy",
-        "description": "The influence of personal knowledge management on individual decision making in healthcare medical treatment",
+        "title": "The influence of personal knowledge management on individual decision making in healthcare medical treatment",
+        "author": "Yi-Mei Huang",
+        "degree": "Doctor of Philosophy",
+        "description": "This study explores the impact of personal knowledge management (PKM) on the decision-making processes of individuals in the context of healthcare and medical treatment.",
         "link": ""
       },
       {
         "image": "thumbnails/decision.jpeg",
-        "title": "Simone Gressel - Doctor of Philosophy",
-        "description": "Management Decision Making in the Age of Big Data - An Exploration of the Roles of Analytics and Human Judgment",
+        "title": "Management Decision Making in the Age of Big Data - An Exploration of the Roles of Analytics and Human Judgment",
+        "author": "Simone Gressel",
+        "degree": "Doctor of Philosophy",
+        "description": "This research project delves into how management decision-making is influenced by the integration of big data analytics and human judgment.",
         "link": ""
       },
       {
         "image": "thumbnails/ai.jpeg",
-        "title": "Melika Soleimani - Doctor of Philosophy",
-        "description": "Stratgic decision making through artificial intelligence and human insight",
+        "title": "Stratgic decision making through artificial intelligence and human insight",
+        "author": "Melika Soleimani",
+        "degree": "Doctor of Philosophy",
+        "description": "This research investigates how strategic decision-making processes can be optimized through the integration of artificial intelligence (AI) and human insight.",
         "link": ""
       },
       {
         "image": "thumbnails/crowds.jpeg",
-        "title": "Ji Yu (Maggie) - Doctor of Philosophy",
-        "description": "Wisdom of the Crowds: Developing a Social Media Platform for Serious Research",
+        "title": "Wisdom of the Crowds: Developing a Social Media Platform for Serious Research",
+        "author": "Ji Yu (Maggie)",
+        "degree": "Doctor of Philosophy",
+        "description": "This project focuses on the creation of a specialized social media platform designed to harness the collective intelligence of a large group of diverse individuals—often referred to as the \"wisdom of the crowds\"—for serious research purposes.",
         "link": ""
       }
     ]

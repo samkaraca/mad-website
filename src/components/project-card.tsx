@@ -15,6 +15,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <h3>{project.title}</h3>
       <p>{project.description}</p>
       {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">Learn More</a>}
+     <div className={styles["info"]}>
+      {project.author && <p>{project.author}</p>}
+      {project.degree && <p>{project.degree}</p>}
+      </div>
       </div>
     </div>
   );

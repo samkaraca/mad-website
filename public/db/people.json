@@ -2,7 +2,7 @@
     {
         "name": "Prof. David Pauleen",
         "title": "Professor",
-        "image": "../david.jpg",
+        "image": "/people/david.jpg",
         "email": "D.Pauleen@massey.ac.nz",
         "building": "",
         "phone": "+64 9-213 6385",
@@ -11,7 +11,7 @@
     {
         "name": "Dr. Kasuni Weerasinghe",
         "title": "Senior Lecturer",
-        "image": "../kw.jpg",
+        "image": "people/kw.jpg",
         "email": "kasuni.weerasinghe@aut.ac.nz",
         "building": "",
         "phone": "",
@@ -20,7 +20,7 @@
     {
         "name": "Dr. Shafiq Alam",
         "title": "Senior Lecturer",
-        "image": "../sa.jpg",
+        "image": "people/sa.png",
         "email": "S.Alam1@massey.ac.nz",
         "building": "05, QA3",
         "phone": "+64 9-213 6262",
@@ -29,7 +29,7 @@
     {
         "name": "Prof. James Arrowsmith",
         "title": "Senior Lecturer",
-        "image": "../jim.jpg",
+        "image": "people/jim.jpg",
         "email": "J.Arrowsmith@massey.ac.nz",
         "building": "",
         "phone": "+64 9-213 6390",
@@ -38,7 +38,7 @@
     {
         "name": "Dr. Christine Tan",
         "title": "Senior Lecturer",
-        "image": "../christine.jpg",
+        "image": "people/christine.jpg",
         "email": "",
         "building": "QB2.19, Quad B",
         "phone": "+64 9-213 6389",
@@ -47,7 +47,7 @@
     {
         "name": "Dr. Gloria Liu",
         "title": "Senior Lecturer",
-        "image": "../gloria.jpg",
+        "image": "people/gloria.jpg",
         "email": "",
         "building": "217, QB",
         "phone": "+64 9-213 6392",
@@ -56,7 +56,7 @@
     {
         "name": "Dr. Melika Soleimani",
         "title": "PhD",
-        "image": "../Melika.jpg",
+        "image": "people/Melika.jpg",
         "email": "",
         "building": "",
         "phone": "",
@@ -65,7 +65,7 @@
     {
         "name": "Ji Yu (Maggie)",
         "title": "PhD Student",
-        "image": "../yuji.jpg",
+        "image": "people/yuji.jpg",
         "email": "",
         "building": "",
         "phone": "",
@@ -83,7 +83,7 @@
     {
         "name": "Assoc. Prof. Shane Scahill",
         "title": "External Co-Founder",
-        "image": "../shane.jpg",
+        "image": "people/shane.jpg",
         "email": "s.scahill@auckland.ac.nz",
         "building": "",
         "phone": "+64 9-373 7599",
@@ -92,7 +92,7 @@
     {
         "name": "Dr. Nazim Taskin",
         "title": "Senior Lecturer, External Co-founder",
-        "image": "../nazim.jpg",
+        "image": "people/nazim.jpg",
         "email": "nazim.taskin@bogazici.edu.tr",
         "building": "B217",
         "phone": "",
@@ -101,7 +101,7 @@
     {
         "name": "Dr. Ali Intezari Harsini",
         "title": "Senior Lecturer, External Co-founder",
-        "image": "../Ali.jpg",
+        "image": "people/Ali.jpg",
         "email": "a.intezari@business.uq.edu.au",
         "building": "Room 408, Joyce Ackroyd (37), St. Lucia Campus",
         "phone": "+61 7 344 31249",
@@ -110,7 +110,7 @@
     {
         "name": "Dr. Hamed Jafarzadeh",
         "title": "PhD",
-        "image": "../Hamed.jpg",
+        "image": "people/Hamed.jpg",
         "email": "hamed.jafarzadeh@mq.edu.au",
         "building": "",
         "phone": "",
@@ -119,7 +119,7 @@
     {
         "name": "Prof. Dursun Delen",
         "title": "Associate Member",
-        "image": "../dursun.jpg",
+        "image": "people/dursun.jpg",
         "email": "dursun.delen@okstate.edu.",
         "building": "",
         "phone": " +1 918 594 8283",
@@ -128,7 +128,7 @@
     {
         "name": "Dr. Asil Oztekin",
         "title": "Associate Member",
-        "image": "../asil.jpg",
+        "image": "people/asil.jpg",
         "email": "Asil_Oztekin@uml.edu",
         "building": "Pulichino Tong Business Center - 442",
         "phone": "+1 (978) 934-2714",
@@ -137,7 +137,7 @@
     {
         "name": "Dr. Ali Coskun",
         "title": "Associate Member",
-        "image": "../coskun.jpeg",
+        "image": "people/coskun.jpeg",
         "email": "ali.coskun@boun.edu.tr",
         "building": "",
         "phone": "",
@@ -155,7 +155,7 @@
     {
         "name": "Dr. Mustafa Hayri Tongarlak",
         "title": "Associate Member",
-        "image": "../hayri.jpeg",
+        "image": "people/hayri.jpeg",
         "email": "tongarlak@boun.edu.tr",
         "building": "",
         "phone": "6521",
@@ -164,7 +164,7 @@
     {
         "name": "Dr. Tiong-Thye Goh",
         "title": "Associate Member",
-        "image": "../tiong-goh.jpg",
+        "image": "people/tiong-goh.jpg",
         "email": "Tiong.Goh@vuw.ac.nz",
         "building": "RH 409, Rutherford House",
         "phone": "+64 4 472 1000",
@@ -173,7 +173,7 @@
     {
         "name": "Mustafa Coskun",
         "title": "Associate Member",
-        "image": "../Mustafa.jpg",
+        "image": "people/Mustafa.jpg",
         "email": "",
         "building": "",
         "phone": "",
@@ -182,7 +182,7 @@
     {
         "name": "Elif Tugba Aydinliyurt",
         "title": "Associate Member",
-        "image": "../Elif.jpg",
+        "image": "people/Elif.jpg",
         "email": "",
         "building": "",
         "phone": "",
@@ -191,7 +191,7 @@
     {
         "name": "Tyler Xue",
         "title": "Associate Member",
-        "image": "../tyler.jpeg",
+        "image": "people/tyler.jpeg",
         "email": "",
         "building": "",
         "phone": "",
@@ -200,7 +200,7 @@
     {
         "name": "Marsha Ma-Fairbrother",
         "title": "Associate Member",
-        "image": "../marsha.jpeg",
+        "image": "people/marsha.jpeg",
         "email": "",
         "building": "",
         "phone": "",

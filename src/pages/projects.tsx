@@ -17,8 +17,9 @@ export async function getStaticProps() {
 export default function Projects({ projectsSection }: { projectsSection: IProjectsSection[] }) {
   return (
     <div className={styles["content"]}>
+      <h1>Projects</h1>
       {projectsSection.map((section, index) => (
-        <div key={index}>
+        <div key={index} className={styles["list"]}>
           <h2 className={`${jost.className} ${styles["title"]}`}>{section.title}</h2>
           <DefaultCardGrid>
           {section.projects.map((project, idx) => (
