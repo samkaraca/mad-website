@@ -15,8 +15,8 @@ export default function Output({ outputs }: { outputs: IOutput[] }) {
   return (
     <DefaultMainContainer
       title="Outputs"
-      image="/output-bg.jpg"
-      imageAlt="Campus view"
+      image="/outputs-background.jpg"
+      imageAlt="A close-up photo of handwritten notes on aged papers."
     >
       <div className={styles["content"]}>
         <h1>All Publications By The MAD Research Group</h1>

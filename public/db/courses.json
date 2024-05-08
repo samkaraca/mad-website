@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "title": "Management, Analytics and Decision Making",
+    "description": "Introduction to techniques and issues involved in using data to support organisational decision making.",
+    "link": "https://www.massey.ac.nz/study/courses/management-analytics-and-decision-making-157216/"
+  },
+  {
+    "title": "Advanced Management, Analytics, and Decision Making",
+    "description": "A comprehensive study of the techniques and issues involved in using data to support organisational decision making.",
+    "link": "https://www.massey.ac.nz/study/courses/advanced-management-analytics-and-decision-making-157748/"
+  }
+]
