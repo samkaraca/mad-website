@@ -1,37 +1,26 @@
 [
   {
-    "title": "The Shawshank Redemption",
-    "image": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
-    "description": "Two imprisoned man bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-    "date": "01/01/1994",
-    "fileName": "the-shawshank-redemption.html"
+    "title": "MAD group is working on a new project",
+    "description": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders.",
+    "link": "https://mad.massey.ac.nz/marn.html"
   },
   {
-    "title": "The Godfather",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
-    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-    "date": "01/01/1972",
-    "fileName": "the-godfather.html"
+    "title": "Survey reveals wary Kiwi attitudes around emerging technologies",
+    "description": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders.",
+    "date": "13/12/2022",
+    "link": "https://www.massey.ac.nz/about/news/survey-reveals-wary-kiwi-attitudes-around-emerging-technologies/"
   },
   {
-    "title": "Inception",
-    "image": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
-    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
-    "date": "01/01/2010",
-    "fileName": "inception.html"
+    "title": "Dr. Kasuni Weerasinghe has been promoted to Senior Lecturer! Congratulations!"
   },
   {
-    "title": "Pulp Fiction",
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg",
-    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-    "date": "01/01/1994",
-    "fileName": "pulp-fiction.html"
+    "title": "Privacy Week is coming",
+    "description": "Privacy Week 2023: Privacy rights in the digital age 8-14th May",
+    "link": "https://privacy.org.nz/news/forums-and-seminars/privacy-week/privacy-week-2023/"
   },
   {
-    "title": "The Matrix",
-    "image": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
-    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-    "date": "01/01/1999",
-    "fileName": "the-matrix.html"
+    "title": "Dr. Melika Soleimani published a new article! ",
+    "description": "Privacy Week 2023: Privacy rights in the digital age 8-14th May",
+    "link": "https://issuu.com/hrnz.magazine/docs/hrm-0003_hrnz_magazine_spring_2023_issuu"
   }
 ]

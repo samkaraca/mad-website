@@ -1,20 +1,16 @@
+import { INewsCard } from "@/types/news-card";
 import styles from "./news-card.module.scss";
+import { UXAnchor } from "../ux-anchor/ux-anchor";
 
 export const NewsCard = ({
-  img,
-  title,
-  text,
-  date,
-  link,
+  newsCard,
   className,
 }: {
-  img?: string;
-  title: string;
-  text: string;
-  date?: string;
-  link?: string;
+  newsCard: INewsCard;
   className?: string;
 }) => {
+  const { title, date, image, description, link } = newsCard;
+
   return (
     <li>
       <a
@@ -23,7 +19,7 @@ export const NewsCard = ({
           link ? styles["clickable"] : ""
         }`}
       >
-        <img src={img ? img : "/placeholder.jpg"} alt="" />
+        <img src={image ? image : "/placeholder.jpg"} alt="" />
         <div className={styles["content"]}>
           <h4>{title}</h4>
           {date && (
@@ -32,7 +28,7 @@ export const NewsCard = ({
               <p>{date}</p>
             </div>
           )}
-          <p>{text}</p>
+          {description && <p>{description}</p>}
         </div>
       </a>
     </li>

@@ -10,16 +10,12 @@ export const NewsPage = ({ news }: { news: INewsCard[] }) => {
       <section aria-label="All news from MAD group" className={styles["news"]}>
         <DefaultBanner title="News" />
         <DefaultCardGrid>
-          {news.map((newsItem) => {
+          {news.map((newsItem, i) => {
             return (
               <NewsCard
-                key={newsItem.fileName}
+                key={i}
                 className={styles["news-card"]}
-                link={`/news/${newsItem.fileName}`}
-                title={newsItem.title}
-                date={newsItem.date}
-                text={newsItem.description}
-                img={newsItem.image}
+                newsCard={newsItem}
               />
             );
           })}

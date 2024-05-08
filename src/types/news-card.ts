@@ -1,7 +1,7 @@
 export interface INewsCard {
   title: string;
-  date: string;
-  image: string;
-  description: string;
-  fileName: string;
+  image?: string;
+  date?: string;
+  description?: string;
+  link?: string;
 }

@@ -15,13 +15,9 @@ export const LatestNews = ({ news }: { news: INewsCard[] }) => {
         {news.map((newsItem) => {
           return (
             <NewsCard
-              key={newsItem.fileName}
+              key={newsItem.link}
               className={styles["news-card"]}
-              link={`/news/${newsItem.fileName}`}
-              title={newsItem.title}
-              date={newsItem.date}
-              text={newsItem.description}
-              img={newsItem.image}
+              newsCard={newsItem}
             />
           );
         })}
