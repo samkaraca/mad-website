@@ -10,9 +10,12 @@
   flex-direction: column;
   color: white;
   display: flex;
+}
+
+.main-content {
   padding-inline: 2rem;
   padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.7rem;
 }
 
 .contact {
@@ -43,4 +46,12 @@
   }
 
   color: grey;
+}
+
+.acknowledgement {
+  color: #999;
+  background-color: #333;
+  padding-inline: 2rem;
+  padding-block: 0.4rem;
+  font-style: italic;
 }
