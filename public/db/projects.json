@@ -27,19 +27,19 @@
         "link": ""
       },
       {
-        "image": "thumbnails/zen.jpeg",
+        "image": "thumbnails/zen.jpg",
         "title": "Does it matter to do it mindfully? Role of IT mindfulness in agile project management",
         "description": "This project investigates the role of mindfulness in the context of IT and agile project management. It explores whether practicing mindfulness affects the efficiency and outcomes of managing agile projects.",
         "link": ""
       },
       {
-        "image": "thumbnails/intuition.jpeg",
+        "image": "thumbnails/intuition.jpg",
         "title": "Role of intuition and rationality in decision making",
         "description": "The study seeks to identify when and how intuition or rationality should be prioritized to optimize decision outcomes.",
         "link": ""
       },
       {
-        "image": "thumbnails/seo.jpeg",
+        "image": "thumbnails/seo.jpg",
         "title": "Big Analytics for Small Kiwis: Google Analytics in New Zealand",
         "description": "This project focuses on the application of Google Analytics for small businesses in New Zealand, exploring its impact and utility in understanding customer behavior, enhancing online presence, and improving sales. It aims to provide insights into how small Kiwi businesses can effectively leverage big data tools like Google Analytics to drive growth and competitiveness in a digital economy.",
         "link": ""
@@ -50,19 +50,19 @@
     "title": "Project Proposals",
     "projects": [
       {
-        "image": "thumbnails/laser.jpeg",
+        "image": "thumbnails/laser.jpg",
         "title": "Business leaders need tech skills",
         "description": "This project explores the necessity of technical skills among business leaders, investigating how proficiency in technology affects leadership effectiveness, decision-making, and overall business performance.",
         "link": ""
       },
       {
-        "image": "thumbnails/efficient.jpeg",
+        "image": "thumbnails/efficient.jpg",
         "title": "Improving SME decision-making",
         "description": "This project aims to enhance decision-making processes in small and medium-sized enterprises (SMEs) through targeted strategies and tools. It investigates which methods (e.g., data analytics, expert systems, or consultative frameworks) most effectively improve accuracy, efficiency, and outcome quality in SME decision-making.",
         "link": ""
       },
       {
-        "image": "thumbnails/maori.jpeg",
+        "image": "thumbnails/maori.jpg",
         "title": "SMEs, practical wisdom and big data: integrating Maori Kaitiakitanga into business decision making",
         "description": "This project examines the integration of Māori principles of kaitiakitanga (guardianship and sustainable management) into the decision-making processes of small and medium-sized enterprises (SMEs) utilizing big data. It seeks to explore how practical wisdom, informed by traditional Māori values, can complement modern big data analytics to enhance business practices, sustainability, and community engagement.",
         "link": ""
@@ -74,13 +74,13 @@
         "link": ""
       },
       {
-        "image": "thumbnails/train.jpeg",
+        "image": "thumbnails/train.jpg",
         "title": "Pushing back against technological solutionism - integrating wisdom traditions",
         "description": "This project challenges the prevailing reliance on technology as the primary solution to societal problems, a concept known as technological solutionism. It advocates for the integration of wisdom traditions—long-established knowledge systems and philosophies—into modern problem-solving frameworks",
         "link": ""
       },
       {
-        "image": "thumbnails/poverty.jpeg",
+        "image": "thumbnails/poverty.jpg",
         "title": "Addressing Wicked Problems in the Age of Big Data: The Case of Child Poverty in New Zealand",
         "description": "This project investigates how big data can be utilized to address the wicked problem of child poverty in New Zealand. It examines the complexities and multifaceted nature of child poverty, exploring how large datasets and advanced analytics can provide new insights and facilitate more effective interventions. The study aims to identify patterns, trends, and underlying factors contributing to child poverty, proposing data-driven strategies to mitigate its impact and contribute to long-term solutions.",
         "link": ""
@@ -90,7 +90,7 @@
     "title": "PhD Students Research Topics",
     "projects": [
       {
-        "image": "thumbnails/cargo.jpeg",
+        "image": "thumbnails/cargo.jpg",
         "title": "TSupply Chain Visibility and Its Linkage to Decision-making Improvement: An Exploratory Study in the New Zealand Supply Chain Context",
         "author": "Thi Thanh Hoa Nguyen",
         "degree": "Doctor of Philosophy",
@@ -98,7 +98,7 @@
         "link": ""
       },
       {
-        "image": "thumbnails/knowledge.jpeg",
+        "image": "thumbnails/knowledge.jpg",
         "title": "The influence of personal knowledge management on individual decision making in healthcare medical treatment",
         "author": "Yi-Mei Huang",
         "degree": "Doctor of Philosophy",
@@ -106,7 +106,7 @@
         "link": ""
       },
       {
-        "image": "thumbnails/decision.jpeg",
+        "image": "thumbnails/decision.jpg",
         "title": "Management Decision Making in the Age of Big Data - An Exploration of the Roles of Analytics and Human Judgment",
         "author": "Simone Gressel",
         "degree": "Doctor of Philosophy",
@@ -114,7 +114,7 @@
         "link": ""
       },
       {
-        "image": "thumbnails/ai.jpeg",
+        "image": "thumbnails/ai.jpg",
         "title": "Stratgic decision making through artificial intelligence and human insight",
         "author": "Melika Soleimani",
         "degree": "Doctor of Philosophy",
@@ -122,7 +122,7 @@
         "link": ""
       },
       {
-        "image": "thumbnails/crowds.jpeg",
+        "image": "thumbnails/crowds.jpg",
         "title": "Wisdom of the Crowds: Developing a Social Media Platform for Serious Research",
         "author": "Ji Yu (Maggie)",
         "degree": "Doctor of Philosophy",
