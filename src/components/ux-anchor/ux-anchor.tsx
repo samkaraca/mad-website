@@ -1,5 +1,6 @@
 import { isHrefOuter } from "@/utils/is-href-outer";
 import { ReactNode } from "react";
+import { OpenInNewWindowIcon } from "../open-in-new-window-icon";
 
 export const UXAnchor = ({
   text,
@@ -18,19 +19,15 @@ export const UXAnchor = ({
       className={className}
       {...(isHrefDefinedAndOuter && { target: "_blank" })}
     >
-      {text}
-      {isHrefDefinedAndOuter && (
-        <img
-          style={{
-            display: "inline-block",
-            paddingTop: "1px",
-            paddingLeft: "0.3em",
-            height: "0.8em",
-            marginTop: "auto",
-          }}
-          src="open-in-new.svg"
-        />
-      )}
+      <OpenInNewWindowIcon>
+        {(icon) => {
+          return (
+            <>
+              {text} {isHrefDefinedAndOuter && icon}
+            </>
+          );
+        }}
+      </OpenInNewWindowIcon>
     </a>
   );
 };
