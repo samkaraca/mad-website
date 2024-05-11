@@ -14,6 +14,7 @@ export async function getStaticProps() {
 export default function Output({ outputs }: { outputs: IOutput[] }) {
   return (
     <DefaultMainContainer
+      size="medium"
       title="Outputs"
       image="/outputs-background.jpg"
       imageAlt="A close-up photo of handwritten notes on aged papers."

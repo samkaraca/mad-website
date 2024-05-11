@@ -8,17 +8,22 @@ export const DefaultMainContainer = ({
   title,
   embeddedTitle,
   embeddedTitleBackgroundColor,
+  size,
   children,
 }: {
   image: string;
   imageAlt: string;
   embeddedTitle?: string;
   embeddedTitleBackgroundColor?: string;
+  size?: "medium" | "large";
   title: string;
   children: ReactNode;
 }) => {
   return (
-    <main id="main" className={styles["main"]}>
+    <main
+      id="main"
+      className={`${styles["main"]} ${size ? styles[size] : styles["large"]}`}
+    >
       <div className={styles["background-banner"]} />
       <div className={styles["content"]}>
         <h1 className={crimsonPro.className}>{title}</h1>
