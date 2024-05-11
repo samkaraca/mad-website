@@ -21,8 +21,8 @@ export const Footer = ({
         style={{
           padding: "0.5rem 2rem",
           backgroundColor: "grey",
-          visibility: pathName === "/about-us" ? "visible" : "hidden",
-          position: pathName === "/about-us" ? "initial" : "absolute",
+          visibility: pathName === "/people" ? "visible" : "hidden",
+          position: pathName === "/people" ? "initial" : "absolute",
           zIndex: 1,
         }}
       >

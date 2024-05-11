@@ -55,21 +55,21 @@ export const Navigation = ({
         />
         <Link
           tabIndex={tabIndex}
-          isActive={path === "/teaching"}
-          title="Teaching"
-          link="/teaching"
-        />
-        <Link
-          tabIndex={tabIndex}
           isActive={path === "/grants"}
           title="Grants"
           link="/grants"
         />
         <Link
           tabIndex={tabIndex}
-          isActive={path === "/about-us"}
-          title="About Us"
-          link="/about-us"
+          isActive={path === "/teaching"}
+          title="Teaching"
+          link="/teaching"
+        />
+        <Link
+          tabIndex={tabIndex}
+          isActive={path === "/people"}
+          title="People"
+          link="/people"
         />
       </ul>
     </nav>
