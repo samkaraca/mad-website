@@ -1,26 +1,58 @@
+$footer-bg-color: #202020;
+$footer-title-color: white;
+$footer-text-color: white;
+$acknowledgement-bg-color: #202020;
+$acknowledgement-text-color: #999;
+
 .footer {
   grid-area: footer;
   position: relative;
 
   a {
-    color: white;
+    color: $footer-title-color;
   }
 
-  background-color: #202020;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
   flex-direction: column;
-  color: white;
   display: flex;
 }
 
-.main-content {
-  padding-inline: 2rem;
+.above-acknowledgement {
+  padding-inline: 6rem;
   padding-top: 4rem;
-  padding-bottom: 0.7rem;
+  padding-bottom: 4rem;
+
+  > .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    > img {
+      padding-bottom: 0.5rem;
+      height: 7rem;
+      filter: invert(0.6);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .above-acknowledgement {
+    padding-inline: 0;
+
+    > .main-content {
+      flex-direction: column;
+      align-items: center;
+
+      > img {
+        margin-block: 2.5rem;
+        height: 4rem;
+      }
+    }
+  }
 }
 
 .contact {
-  padding-left: 4rem;
-  padding-bottom: 3rem;
   font-weight: lighter;
 
   h2 {
@@ -30,7 +62,7 @@
 
   .divider {
     height: 0.1rem;
-    background-color: white;
+    background-color: $footer-title-color;
     width: 5rem;
     margin-bottom: 1rem;
   }
@@ -42,15 +74,15 @@
   .divider {
     margin-block: 0.6rem;
     height: 0.1rem;
-    background-color: grey;
+    background-color: $footer-title-color;
   }
 
-  color: grey;
+  color: $footer-title-color;
 }
 
 .acknowledgement {
-  color: #999;
-  background-color: #333;
+  color: $acknowledgement-text-color;
+  background-color: $acknowledgement-bg-color;
   padding-inline: 2rem;
   padding-block: 0.4rem;
   font-style: italic;
