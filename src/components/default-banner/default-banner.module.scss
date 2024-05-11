@@ -8,7 +8,7 @@
   color: white;
   font-size: 4rem;
   width: 100%;
-  min-height: 20rem;
+  min-height: 10rem;
   padding-block: 2rem;
 
   > img {
@@ -20,9 +20,20 @@
   }
 
   > h1 {
-    max-width: calc(gv.$readable-content-max-width * 1.2);
+    max-width: calc(gv.$readable-content-max-width);
     padding-inline: calc(3rem * var(--100-to-70));
     padding-block: calc(4rem * var(--100-to-80));
     font-size: calc(7rem * var(--100-to-80));
+  }
+}
+
+.banner.medium {
+  min-height: 14rem;
+
+  > h1 {
+    width: gv.$readable-content-max-width;
+    padding-inline: gv.$default-padding-inline;
+    padding-block: calc(2rem * var(--100-to-50));
+    font-size: calc(3rem * var(--100-to-80));
   }
 }

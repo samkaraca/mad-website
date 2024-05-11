@@ -4,14 +4,25 @@ import { crimsonPro } from "@/fonts";
 export const DefaultBanner = ({
   title,
   className,
+  imgSrc,
+  size,
 }: {
   title: string;
   className?: string;
+  imgSrc?: string;
+  size?: "medium" | "large";
 }) => {
   return (
-    <section className={`${styles["banner"]} ${className ? className : ""}`}>
+    <section
+      className={`${styles["banner"]} ${className} ${
+        size ? styles[size] : styles["large"]
+      }`}
+    >
+      <img
+        src={imgSrc || "/default-bg-2.svg"}
+        alt="Banner background pattern"
+      />
       <h1 className={crimsonPro.className}>{title}</h1>
-      <img src="/default-bg-2.svg" alt="Banner background pattern" />
     </section>
   );
 };

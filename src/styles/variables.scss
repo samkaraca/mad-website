@@ -1,6 +1,11 @@
+// COLORS
 $primary-color: #004b8d;
 $secondary-color: #e4a024;
 $tertiary-color: #f37021;
 $quaternary-color: #ccdbe8;
-$readable-content-max-width: 60rem;
+
+// LAYOUT
 $navigation-menu-width: 17rem;
+$readable-content-max-width: 60rem;
+$content-max-width: 80rem;
+$default-padding-inline: calc(4rem * var(--100-to-50));
