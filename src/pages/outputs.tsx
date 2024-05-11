@@ -17,9 +17,10 @@ export default function Output({ outputs }: { outputs: IOutput[] }) {
       title="Outputs"
       image="/outputs-background.jpg"
       imageAlt="A close-up photo of handwritten notes on aged papers."
+      embeddedTitle="All Publications By The MAD Research Group"
     >
       <div className={styles["content"]}>
-        <h1>All Publications By The MAD Research Group</h1>
+        {/* <h1>All Publications By The MAD Research Group</h1> */}
         <div className={styles["output-list"]}>
           {outputs.map((output, index) => {
             return (

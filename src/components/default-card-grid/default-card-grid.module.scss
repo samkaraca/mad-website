@@ -14,7 +14,7 @@
   place-content: center;
   gap: 3rem;
   width: calc(100% - var(--margin-inline) * 2);
-  max-width: calc(gv.$readable-content-max-width * 1.5);
+  max-width: gv.$content-max-width;
   margin-inline: auto;
   list-style: none;
   padding-left: 0;
