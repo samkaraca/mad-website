@@ -48,7 +48,7 @@
 .embedded-title {
   padding-block: calc(1.3rem * var(--100-to-70));
   padding-inline: calc(2.8rem * var(--100-to-60));
-  font-size: 2.5rem;
+  font-size: calc(2.5rem * var(--100-to-80));
   color: white;
   max-width: 100%;
 }
@@ -61,6 +61,14 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 8rem;
+}
+
+.main.medium {
+  .content {
+    > img {
+      height: calc(20rem * var(--100-to-90));
+    }
+  }
 }
 
 @media screen and (max-width: 1500px) {
