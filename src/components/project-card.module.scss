@@ -1,21 +1,41 @@
 @use "../styles/variables.scss" as gv;
 
-.card{
-    width: 100%; /* ensures the card stretches to fill the column */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); // Optional: adds shadow for better visibility
+.card {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional: adds shadow for better visibility
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  img {
+    width: 100%; // Makes image fill the card width
+    height: 12rem;
+    object-fit: cover;
+  }
+
+  .info {
+    font-style: italic;
+  }
+
+  .content {
+    height: 20rem;
+    overflow-y: scroll;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    margin: 0.75rem;
+    padding: 0.75rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
-    img {
-        width: 100%; // Makes image fill the card width
-        height: 12rem;
-        object-fit: cover;
-    }
+    gap: 1rem;
+  }
 
-    .info{
-        font-style: italic;
-    }
+  .content::-webkit-scrollbar {
+    width: 0.1rem;
+  }
 
-
+  .content::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+  }
 }
