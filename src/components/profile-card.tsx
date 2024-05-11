@@ -7,7 +7,7 @@ export default function ProfileCard(props: IPersonCard) {
   return (
     <Link className={styles["profile-card"]} href={props.link || 'about-us'}>
       <div className={styles["profile-frame"]}>
-        <img src={props.image}></img>
+        <img src={props.image ? props.image : "/person-placeholder.jpg"}></img>
       </div>
 
       <h3>{props.name}</h3>
