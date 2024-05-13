@@ -26,8 +26,10 @@ $acknowledgement-text-color: #999;
 
   > .main-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
+    gap: 8rem;
 
     > img {
       padding-bottom: 0.5rem;
@@ -37,7 +39,14 @@ $acknowledgement-text-color: #999;
   }
 }
 
-@media screen and (max-width: 768px) {
+.contact-and-follow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 8rem;
+}
+
+@media screen and (max-width: 850px) {
   .footer-body {
     padding: 0;
     padding-top: 4rem;
@@ -45,26 +54,55 @@ $acknowledgement-text-color: #999;
     > .main-content {
       flex-direction: column;
       align-items: center;
+      gap: 4rem;
 
       > img {
         margin-block: 2rem;
-        margin-top: 6rem;
         height: 4rem;
       }
     }
   }
+
+  .contact-and-follow {
+    // flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: unset;
+  }
 }
 
-.contact {
+@media screen and (max-width: 480px) {
+  .contact-and-follow {
+    width: max-content;
+    margin-inline: auto;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.social-media-icon {
+  margin-right: 1rem;
+
+  > img {
+    height: 2rem;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.footer-section {
   font-weight: lighter;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
 
   .divider {
-    height: 0.1rem;
+    height: 1px;
     background-color: $footer-title-color;
     width: 5rem;
     margin-bottom: 1rem;
@@ -75,10 +113,19 @@ $acknowledgement-text-color: #999;
   width: 100%;
 
   > p {
-    border-top: 1px solid grey;
-    color: grey;
+    text-align: right;
+    font-weight: 100;
+    border-top: 0.1px solid white;
+    color: white;
     margin-inline: gv.$default-padding-inline-small;
-    padding-block: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .copyright > p {
+    text-align: left;
   }
 }
 

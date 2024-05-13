@@ -26,7 +26,7 @@ export const Footer = ({
         }}
       >
         Acknowledgement: This website was built by Ali Nehir Dündar and Hikmet
-        Sami Karaca with 🧡
+        Sami Karaca with ❤️
       </section>
       <Overlay
         isOpen={hamburgerMenuStatus === "open"}
@@ -34,17 +34,43 @@ export const Footer = ({
       />
       <section className={styles["footer-body"]}>
         <section className={styles["main-content"]}>
-          <section className={`${styles["contact"]}`}>
-            <h2 className={`${jost.className}`}>CONTACT INFO</h2>
-            <div className={styles["divider"]} />
-            <p className={`${crimsonPro.className}`}>
-              Massey University East Precinct <br />
-              Albany Expressway (SH17) <br />
-              Albany <br />
-              0632 <br />
-              New Zealand <br /> <br />
-              <a href="mailto:mad@massey.ac.nz">mad@massey.ac.nz</a>
-            </p>
+          <section className={styles["contact-and-follow"]}>
+            <section className={`${styles["footer-section"]}`}>
+              <h2 className={`${jost.className}`}>CONTACT INFO</h2>
+              <div className={styles["divider"]} />
+              <p className={`${crimsonPro.className}`}>
+                Massey University East Precinct <br />
+                Albany Expressway (SH17) <br />
+                Albany <br />
+                0632 <br />
+                New Zealand <br /> <br />
+                <a href="mailto:mad@massey.ac.nz">mad@massey.ac.nz</a>
+              </p>
+            </section>
+            <section className={`${styles["footer-section"]}`}>
+              <h2 className={`${jost.className}`}>FOLLOW US</h2>
+              <div className={styles["divider"]} />
+              <p className={`${crimsonPro.className}`}>
+                <a
+                  target="_blank"
+                  className={styles["social-media-icon"]}
+                  href="https://www.linkedin.com/in/management-analytics-decision-making-aa839013a/"
+                >
+                  <img src="/icons/blue-linkedin.svg" alt="" />
+                </a>
+                <a
+                  target="_blank"
+                  className={`${styles["social-media-icon"]}`}
+                  href="https://twitter.com/MADWorkgroup"
+                >
+                  <img
+                    style={{ filter: "invert(1)" }}
+                    src="/icons/x.svg"
+                    alt="The logo of social media website X"
+                  />
+                </a>
+              </p>
+            </section>
           </section>
           <img src="/kiwi-bird.svg" alt="Kiwi bird" />
         </section>
