@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mad.massey.ac.nz
+
+# Sitemaps
+Sitemap: https://mad.massey.ac.nz/sitemap.xml
