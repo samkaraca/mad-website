@@ -1,5 +1,26 @@
 @use "../../styles/variables.scss" as gv;
 
+.skip {
+  position: fixed;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: gv.$secondary-color;
+  color: white;
+  padding: 0.4rem;
+
+  &:focus {
+    left: 10px;
+    top: 0px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 1000; /* Make sure it is on top of other content */
+  }
+}
+
 .app {
   min-height: 100vh;
   display: grid;

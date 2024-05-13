@@ -1,6 +1,6 @@
 @use "../../styles/variables.scss" as gv;
 
-.nav {
+.header {
   grid-area: nav;
   width: gv.$navigation-menu-width;
   display: flex;
@@ -22,10 +22,6 @@
     }
   }
 
-  > ul {
-    width: 100%;
-  }
-
   > h2 {
     display: none;
     padding-block: 0.8rem;
@@ -35,6 +31,10 @@
     border-bottom: 1px solid #eee;
     margin-bottom: 0.8rem;
   }
+
+  > nav {
+    width: 100%;
+  }
 }
 
 .links {
@@ -42,6 +42,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   a:only-child {
     text-decoration: none;
@@ -50,7 +51,7 @@
 }
 
 @media (max-width: 1280px) {
-  .nav {
+  .header {
     position: absolute;
     left: calc(gv.$navigation-menu-width * -1);
     transition: left 0.5s;
@@ -64,7 +65,7 @@
     }
   }
 
-  .nav.hamburger-menu-visible {
+  .header.hamburger-menu-visible {
     left: 0px;
   }
 }
@@ -74,24 +75,21 @@
   display: flex;
   align-items: center;
   height: 3.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
 
   &:hover {
     background-color: #f0f0f0;
   }
 
-  .color-indicator {
+  > .color-indicator {
     width: 0.6rem;
     height: 100%;
     background-color: gv.$primary-color;
     margin-right: 2rem;
   }
 
-  > h3 {
-    font-size: 1.3rem;
-    font-weight: 400;
-  }
-
-  > h3.active-link {
+  &.active-link {
     font-weight: 900;
   }
 }

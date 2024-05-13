@@ -18,9 +18,8 @@ export const Footer = ({
   return (
     <footer id="footer" className={styles["footer"]}>
       <section
+        className={styles["acknowledgement"]}
         style={{
-          padding: "0.5rem 2rem",
-          backgroundColor: "grey",
           visibility: pathName === "/people" ? "visible" : "hidden",
           position: pathName === "/people" ? "initial" : "absolute",
           zIndex: 1,
@@ -33,7 +32,7 @@ export const Footer = ({
         isOpen={hamburgerMenuStatus === "open"}
         onClick={() => setHamburgerMenuStatus("closed")}
       />
-      <section className={styles["above-acknowledgement"]}>
+      <section className={styles["footer-body"]}>
         <section className={styles["main-content"]}>
           <section className={`${styles["contact"]}`}>
             <h2 className={`${jost.className}`}>CONTACT INFO</h2>
@@ -51,15 +50,7 @@ export const Footer = ({
         </section>
       </section>
       <section className={styles["copyright"]}>
-        <p
-          className={jost.className}
-          style={{
-            borderTop: "1px solid grey",
-            color: "grey",
-            marginInline: "2rem",
-            paddingBlock: "1rem",
-          }}
-        >
+        <p className={jost.className}>
           Copyright © 1998 – 2024 Massey University. All rights reserved.
         </p>
       </section>

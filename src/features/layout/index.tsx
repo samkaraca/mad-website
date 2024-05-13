@@ -19,6 +19,9 @@ export const Layout = ({ children }: { children: ReactNode }) => {
         menuStatus === "open" ? styles["nav-visible"] : ""
       }`}
     >
+      <a href="#main-content" className={styles["skip"]}>
+        Skip to Main Content
+      </a>
       <Header
         hamburgerMenuStatus={menuStatus}
         setHamburgerMenuStatus={changeMenuStatus}

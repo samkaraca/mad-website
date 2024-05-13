@@ -18,61 +18,60 @@ $themebox: gv.$secondary-color;
 $themebox-dark: black;
 
 .backgroundBanner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100vh;
-    background-color: gv.$primary-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  background-color: gv.$primary-color;
+}
+
+.content {
+  background-color: white;
+  h1 {
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+    padding-top: 0rem;
   }
-  
-
-.content{
-    background-color: white;
-    h1{
-        font-size: 2.8rem;
-        padding-bottom: 2rem;
-        padding-top: 0rem;
-    }
 }
 
-.output-list{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.output-list {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-
-.year-block{
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    border-top: 0.5rem solid;
-    padding: calc(1.2rem * var(--100-to-50)) calc(3rem * var(--100-to-50)) calc(1rem * var(--100-to-50));
-    background-color: $themebox-light;
-    border-color: $themebox;
+.year-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-top: 0.5rem solid;
+  padding: calc(1.2rem * var(--100-to-50)) calc(3rem * var(--100-to-50))
+    calc(1rem * var(--100-to-50));
+  background-color: $themebox-light;
+  border-color: $themebox;
+  color: $themebox-dark;
+  li {
     color: $themebox-dark;
-    li{
-        color: $themebox-dark;
+  }
+  hr {
+    border-color: $themebox-dark;
+  }
+  h3 {
+    font-size: calc(2rem * var(--100-to-80));
+    color: #935f05;
+  }
+  ul {
+    font-size: calc(1rem * var(--100-to-80));
+    li {
+      padding: calc(0.5rem * var(--100-to-80)) 0rem;
+      margin-left: -1rem;
     }
-    hr{
-        border-color: $themebox-dark;
-    }
-    h2{
-        font-size: calc(2rem * var(--100-to-80));
-        color: #935f05;
-    }
-    ul{
-        font-size: calc(1rem * var(--100-to-80));
-        li{
-            padding: calc(0.5rem * var(--100-to-80)) 0rem;
-            margin-left: -1rem;
-        }
-    }
-    hr{
-        border-width: 0.06rem;
-        border-color: #935f05;
-    }
+  }
+  hr {
+    border-width: 0.06rem;
+    border-color: #935f05;
+  }
 }

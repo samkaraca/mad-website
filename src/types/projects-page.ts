@@ -1,5 +1,6 @@
 export interface IProject {
-  image: string;
+  image?: string;
+  imageAlt?: string;
   title: string;
   author?: string;
   degree?: string;

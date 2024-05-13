@@ -4,18 +4,21 @@
     "projects": [
       {
         "image": "thumbnails/nz.jpg",
+        "imageAlt": "Satellite view of New Zealand's Cook Strait separating the snow-capped mountains of the southern North Island from the northern South Island.",
         "title": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders",
         "description": "This project involves creating a survey to understand how different groups in New Zealand view new technologies. The focus is on capturing the social and technical aspects considered important by key stakeholders.",
         "link": ""
       },
       {
         "image": "thumbnails/king.jpg",
+        "imageAlt": "Close-up side view of a black king chess piece on a board, with other chess pieces blurred in the background.",
         "title": "Decision Outcomes: Analytics with or without Intuition?",
         "description": "This project examines the impact of intuition on decision-making compared to relying solely on data-driven analytics. It explores whether blending instinct with data analytics leads to better decision outcomes than using either approach alone.",
         "link": ""
       },
       {
         "image": "thumbnails/money.jpg",
+        "imageAlt": "Scattered U.S. dollar bills on a wooden surface, symbolizing economic aspects of technology integration.",
         "title": "Ubiquitous data, powerful analytics and embedded information systems: Preparing for tectonic shifts in business, government and society",
         "description": "The objective of this study is to bring to the forefront the concerns, promises and issues that decision makers and thought leaders in business, government and society are grappling with as they integrate technology and information systems into all aspects of society. This study will adopt mixed method research where the extensive literature, interviews with experts in the field, both from academia and industry, will lead to development of a survey instrument. Data collected via the survey will be analyzed using advanced statistical methods.",
         "link": ""
@@ -84,7 +87,8 @@
         "title": "Addressing Wicked Problems in the Age of Big Data: The Case of Child Poverty in New Zealand",
         "description": "This project investigates how big data can be utilized to address the wicked problem of child poverty in New Zealand. It examines the complexities and multifaceted nature of child poverty, exploring how large datasets and advanced analytics can provide new insights and facilitate more effective interventions. The study aims to identify patterns, trends, and underlying factors contributing to child poverty, proposing data-driven strategies to mitigate its impact and contribute to long-term solutions.",
         "link": ""
-      }]
+      }
+    ]
   },
   {
     "title": "PhD Students Research Topics",

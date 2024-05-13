@@ -1,3 +1,4 @@
+@use "../../styles/variables.scss" as gv;
 $footer-bg-color: #202020;
 $footer-title-color: white;
 $footer-text-color: white;
@@ -18,7 +19,7 @@ $acknowledgement-text-color: #999;
   display: flex;
 }
 
-.above-acknowledgement {
+.footer-body {
   padding-inline: 6rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -26,7 +27,7 @@ $acknowledgement-text-color: #999;
   > .main-content {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 
     > img {
       padding-bottom: 0.5rem;
@@ -37,15 +38,17 @@ $acknowledgement-text-color: #999;
 }
 
 @media screen and (max-width: 768px) {
-  .above-acknowledgement {
-    padding-inline: 0;
+  .footer-body {
+    padding: 0;
+    padding-top: 4rem;
 
     > .main-content {
       flex-direction: column;
       align-items: center;
 
       > img {
-        margin-block: 2.5rem;
+        margin-block: 2rem;
+        margin-top: 6rem;
         height: 4rem;
       }
     }
@@ -71,19 +74,18 @@ $acknowledgement-text-color: #999;
 .copyright {
   width: 100%;
 
-  .divider {
-    margin-block: 0.6rem;
-    height: 0.1rem;
-    background-color: $footer-title-color;
+  > p {
+    border-top: 1px solid grey;
+    color: grey;
+    margin-inline: gv.$default-padding-inline-small;
+    padding-block: 1rem;
   }
-
-  color: $footer-title-color;
 }
 
 .acknowledgement {
-  color: $acknowledgement-text-color;
-  background-color: $acknowledgement-bg-color;
-  padding-inline: 2rem;
-  padding-block: 0.4rem;
-  font-style: italic;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: grey;
+  padding-block: 0.5rem;
+  padding-inline: gv.$default-padding-inline-small;
 }

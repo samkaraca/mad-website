@@ -60,7 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 8rem;
+  padding-bottom: gv.$default-below-page-space;
 }
 
 .main.medium {

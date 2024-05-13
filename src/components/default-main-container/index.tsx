@@ -21,7 +21,7 @@ export const DefaultMainContainer = ({
 }) => {
   return (
     <main
-      id="main"
+      id="main-content"
       className={`${styles["main"]} ${size ? styles[size] : styles["large"]}`}
     >
       <div className={styles["background-banner"]} />
@@ -29,14 +29,14 @@ export const DefaultMainContainer = ({
         <h1 className={crimsonPro.className}>{title}</h1>
         <img src={image} alt={imageAlt} />
         {embeddedTitle && (
-          <h1
+          <h2
             style={{
               backgroundColor: embeddedTitleBackgroundColor || "chocolate",
             }}
             className={styles["embedded-title"]}
           >
             {embeddedTitle}
-          </h1>
+          </h2>
         )}
         <div className={styles["white-background"]}>{children}</div>
       </div>

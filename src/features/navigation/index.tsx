@@ -12,9 +12,8 @@ export const Navigation = ({
   const tabIndex = hamburgerMenuStatus === "closed" ? -1 : undefined;
 
   return (
-    <nav
-      id="nav"
-      className={`${styles["nav"]} ${
+    <header
+      className={`${styles["header"]} ${
         hamburgerMenuStatus === "open" ? styles["hamburger-menu-visible"] : ""
       }`}
       aria-hidden={hamburgerMenuStatus === "closed"}
@@ -25,54 +24,56 @@ export const Navigation = ({
         className={styles["massey-logo-link"]}
         href="https://www.massey.ac.nz/"
       >
-        <img src="/massey-colorful.png" alt="Logo of University of Massey" />
+        <img src="/massey-colorful.png" alt="Logo of Massey University" />
       </a>
-      <ul className={`${styles["links"]}`}>
-        <Link
-          tabIndex={tabIndex}
-          isFirstLink={true}
-          isActive={path === "/"}
-          title="Home"
-          link="/"
-        />
-        <Link
-          tabIndex={tabIndex}
-          isActive={path === "/news"}
-          title="News"
-          link="/news"
-        />
-        <Link
-          tabIndex={tabIndex}
-          isActive={path === "/outputs"}
-          title="Outputs"
-          link="/outputs"
-        />
-        <Link
-          tabIndex={tabIndex}
-          isActive={path === "/projects"}
-          title="Projects"
-          link="/projects"
-        />
-        <Link
-          tabIndex={tabIndex}
-          isActive={path === "/grants"}
-          title="Grants"
-          link="/grants"
-        />
-        <Link
-          tabIndex={tabIndex}
-          isActive={path === "/teaching"}
-          title="Teaching"
-          link="/teaching"
-        />
-        <Link
-          tabIndex={tabIndex}
-          isActive={path === "/people"}
-          title="People"
-          link="/people"
-        />
-      </ul>
-    </nav>
+      <nav>
+        <ul className={`${styles["links"]}`}>
+          <Link
+            tabIndex={tabIndex}
+            isFirstLink={true}
+            isActive={path === "/"}
+            title="Home"
+            link="/"
+          />
+          <Link
+            tabIndex={tabIndex}
+            isActive={path === "/news"}
+            title="News"
+            link="/news"
+          />
+          <Link
+            tabIndex={tabIndex}
+            isActive={path === "/outputs"}
+            title="Outputs"
+            link="/outputs"
+          />
+          <Link
+            tabIndex={tabIndex}
+            isActive={path === "/projects"}
+            title="Projects"
+            link="/projects"
+          />
+          <Link
+            tabIndex={tabIndex}
+            isActive={path === "/grants"}
+            title="Grants"
+            link="/grants"
+          />
+          <Link
+            tabIndex={tabIndex}
+            isActive={path === "/teaching"}
+            title="Teaching"
+            link="/teaching"
+          />
+          <Link
+            tabIndex={tabIndex}
+            isActive={path === "/people"}
+            title="People"
+            link="/people"
+          />
+        </ul>
+      </nav>
+    </header>
   );
 };
 
@@ -94,18 +95,16 @@ const Link = ({
       id={isFirstLink ? "first-nav-menu-item" : ""}
       className={styles["link"]}
     >
-      <a tabIndex={tabIndex} href={link}>
+      <a
+        tabIndex={tabIndex}
+        href={link}
+        className={`${lato.className} ${isActive ? styles["active-link"] : ""}`}
+      >
         <div
           style={{ visibility: isActive ? "visible" : "hidden" }}
           className={styles["color-indicator"]}
         />
-        <h3
-          className={`${lato.className} ${
-            isActive ? styles["active-link"] : ""
-          }`}
-        >
-          {title}
-        </h3>
+        {title}
       </a>
     </li>
   );

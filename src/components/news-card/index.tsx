@@ -11,39 +11,47 @@ export const NewsCard = ({
   newsCard: INewsCard;
   className?: string;
 }) => {
-  const { title, date, image, description, link } = newsCard;
+  const { title, date, image, description, link, imageAlt } = newsCard;
   const isHrefDefinedAndOuter = link && isHrefOuter(link);
 
   return (
     <li>
-      <a
-        href={link}
-        className={`${styles["news-card"]} ${className} ${
-          link ? styles["clickable"] : ""
-        }`}
-        {...(isHrefDefinedAndOuter && { target: "_blank" })}
-      >
-        <img src={image ? image : "/placeholder.jpg"} alt="" />
-        <div className={styles["content"]}>
-          <OpenInNewWindowIcon>
-            {(icon) => {
-              return (
-                <h4>
-                  {title} {isHrefDefinedAndOuter && icon}
-                </h4>
-              );
-            }}
-          </OpenInNewWindowIcon>
+      <article className={className}>
+        <a
+          href={link}
+          className={`${styles["news-card"]} ${
+            link ? styles["clickable"] : ""
+          }`}
+          {...(isHrefDefinedAndOuter && { target: "_blank" })}
+        >
+          <img
+            src={image ? image : "/placeholder.jpg"}
+            alt={image && imageAlt && imageAlt}
+          />
+          <div className={styles["content"]}>
+            <OpenInNewWindowIcon>
+              {(icon) => {
+                return (
+                  <h4>
+                    {title} {isHrefDefinedAndOuter && icon}
+                  </h4>
+                );
+              }}
+            </OpenInNewWindowIcon>
 
-          {date && (
-            <div className={styles["date"]}>
-              <img src="/icons/calendar.svg" alt="calendar icon" />
-              <p>{date}</p>
-            </div>
-          )}
-          {description && <p>{description}</p>}
-        </div>
-      </a>
+            {date && (
+              <time
+                dateTime={date && date.split("/").reverse().join("-")}
+                className={styles["date"]}
+              >
+                <img src="/icons/calendar.svg" alt="Calendar icon" />
+                <p>{date}</p>
+              </time>
+            )}
+            {description && <p>{description}</p>}
+          </div>
+        </a>
+      </article>
     </li>
   );
 };

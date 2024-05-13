@@ -8,4 +8,6 @@ $quaternary-color: #ccdbe8;
 $navigation-menu-width: 17rem;
 $readable-content-max-width: 60rem;
 $content-max-width: 80rem;
-$default-padding-inline: calc(4rem * var(--100-to-50));
+$default-padding-inline-large: calc(4rem * var(--100-to-50));
+$default-padding-inline-small: calc(2rem * var(--100-to-60));
+$default-below-page-space: 8rem;

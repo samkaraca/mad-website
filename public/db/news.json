@@ -3,14 +3,16 @@
     "title": "MAD group is working on a new project",
     "description": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders.",
     "link": "/news/mad-project-2025",
-    "image": "thumbnails/socio.jpg"
+    "image": "thumbnails/socio.jpg",
+    "imageAlt": "A close-up image of a yellowed, vintage globe focusing on the map of New Zealand and surrounding areas."
   },
   {
     "title": "Survey reveals wary Kiwi attitudes around emerging technologies",
     "description": "Developing a Questionnaire to Gauge Public Perceptions of Emerging Technologies: Socio-technical representations of key New Zealand stakeholders.",
     "date": "13/12/2022",
     "link": "https://www.massey.ac.nz/about/news/survey-reveals-wary-kiwi-attitudes-around-emerging-technologies/",
-    "image": "thumbnails/kiwi.jpg"
+    "image": "thumbnails/kiwi.jpg",
+    "imageAlt": "A street sign featuring a kiwi bird icon."
   },
   {
     "title": "Dr. Kasuni Weerasinghe has been promoted to Senior Lecturer! Congratulations!"
@@ -19,12 +21,14 @@
     "title": "Privacy Week is coming",
     "description": "Privacy Week 2023: Privacy rights in the digital age 8-14th May",
     "link": "https://privacy.org.nz/news/forums-and-seminars/privacy-week/privacy-week-2023/",
-    "image": "thumbnails/chameleon.jpg"
+    "image": "thumbnails/chameleon.jpg",
+    "imageAlt": "A chameleon camouflaged among green leaves."
   },
   {
     "title": "Dr. Melika Soleimani published a new article! ",
     "description": "Privacy Week 2023: Privacy rights in the digital age 8-14th May",
     "link": "https://issuu.com/hrnz.magazine/docs/hrm-0003_hrnz_magazine_spring_2023_issuu",
-    "image": "thumbnails/books.jpg"
+    "image": "thumbnails/books.jpg",
+    "imageAlt": "A black and white photo of a pile of open books."
   }
 ]

@@ -8,7 +8,7 @@
 }
 
 .list {
-  --margin-inline: 2rem;
+  --margin-inline: calc(2rem * var(--100-to-60));
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   place-content: center;

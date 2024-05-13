@@ -4,11 +4,10 @@ export default function Page404() {
   return (
     <>
       <Head>
-        <title>
-          404 Page Not Found - Management, Analytics, Decision Making
-        </title>
+        <title>404 Page Not Found</title>
       </Head>
       <main
+        id="main-content"
         style={{
           backgroundColor: "#eee",
           height: "100%",

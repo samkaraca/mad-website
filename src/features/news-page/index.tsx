@@ -6,7 +6,7 @@ import { DefaultCardGrid } from "@/components/default-card-grid";
 
 export const NewsPage = ({ news }: { news: INewsCard[] }) => {
   return (
-    <main id="main" className={styles["main"]}>
+    <main id="main-content" className={styles["main"]}>
       <section
         aria-label="All news from MAD group"
         className={styles["banner-and-news"]}

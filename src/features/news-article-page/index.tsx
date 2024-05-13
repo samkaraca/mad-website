@@ -10,7 +10,7 @@ export const NewsArticlePage = ({
   htmlContent: string;
 }) => {
   return (
-    <main className={styles["main"]}>
+    <main id="main-content" className={styles["main"]}>
       <DefaultBanner title={news.title} className={styles["banner"]} />
       <section
         className={styles["news"]}

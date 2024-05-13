@@ -2,7 +2,6 @@ import { DefaultMainContainer } from "@/components/default-main-container";
 import { ICourse } from "@/types/course";
 import styles from "./teaching-page.module.scss";
 import { lato } from "@/fonts";
-import { ReactNode } from "react";
 import { isHrefOuter } from "@/utils/is-href-outer";
 import { UXAnchor } from "@/components/ux-anchor/ux-anchor";
 
@@ -11,7 +10,7 @@ export const TeachingPage = ({ courses }: { courses: ICourse[] }) => {
     <DefaultMainContainer
       embeddedTitle="Courses MAD group offers"
       image="/teaching.jpg"
-      imageAlt="Students studying in a classroom"
+      imageAlt="A modern classroom setting with large windows and diverse students studying and working on their laptops and notebooks."
       title="Teaching"
     >
       <section
