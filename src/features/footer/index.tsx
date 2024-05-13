@@ -38,14 +38,26 @@ export const Footer = ({
             <section className={`${styles["footer-section"]}`}>
               <h2 className={`${jost.className}`}>CONTACT INFO</h2>
               <div className={styles["divider"]} />
-              <p className={`${crimsonPro.className}`}>
-                Massey University East Precinct <br />
-                Albany Expressway (SH17) <br />
-                Albany <br />
-                0632 <br />
-                New Zealand <br /> <br />
+              <section
+                aria-label="Building address"
+                className={styles["text-with-icon"]}
+              >
+                <img src="/icons/apartment.svg" alt="Mail icon." />
+                <p className={`${crimsonPro.className}`}>
+                  Massey University East Precinct <br />
+                  Albany Expressway (SH17) <br />
+                  Albany <br />
+                  0632 <br />
+                  New Zealand <br /> <br />
+                </p>
+              </section>
+              <section
+                aria-label="E-mail address"
+                className={styles["text-with-icon"]}
+              >
+                <img src="/icons/mail.svg" alt="" />
                 <a href="mailto:mad@massey.ac.nz">mad@massey.ac.nz</a>
-              </p>
+              </section>
             </section>
             <section className={`${styles["footer-section"]}`}>
               <h2 className={`${jost.className}`}>FOLLOW US</h2>
@@ -56,7 +68,7 @@ export const Footer = ({
                   className={styles["social-media-icon"]}
                   href="https://www.linkedin.com/in/management-analytics-decision-making-aa839013a/"
                 >
-                  <img src="/icons/blue-linkedin.svg" alt="" />
+                  <img src="/icons/white-linkedin.svg" alt="" />
                 </a>
                 <a
                   target="_blank"
@@ -83,3 +95,4 @@ export const Footer = ({
     </footer>
   );
 };
+<div></div>;
