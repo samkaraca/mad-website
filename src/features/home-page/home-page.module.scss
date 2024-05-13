@@ -6,12 +6,12 @@
 
 .welcome-text {
   > h1 {
-    font-size: calc(3rem * var(--100-to-85));
+    font-size: gv.$title2-font-size;
     margin-bottom: 2rem;
   }
 
   > p {
-    font-size: calc(1.3rem * var(--100-to-85));
+    font-size: gv.$text1-font-size;
   }
 }
 

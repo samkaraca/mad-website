@@ -19,9 +19,6 @@ export const TeachingPage = ({ courses }: { courses: ICourse[] }) => {
       >
         <ul className={styles["courses-list"]}>
           {courses.map((course) => {
-            const isHrefDefinedAndOuter =
-              course.link && isHrefOuter(course.link);
-
             return (
               <li className={styles["course"]} key={course.title}>
                 <h2 className={`${lato.className}`}>

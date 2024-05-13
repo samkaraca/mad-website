@@ -30,7 +30,7 @@
   > h1:first-child {
     max-width: 90%;
     margin: 0 auto;
-    font-size: calc(4rem * var(--100-to-70));
+    font-size: gv.$title1-font-size;
     margin-bottom: calc(3.6rem * var(--100-to-80));
     margin-top: calc(3.5rem * var(--100-to-50));
     text-align: center;
@@ -48,7 +48,7 @@
 .embedded-title {
   padding-block: calc(1.3rem * var(--100-to-70));
   padding-inline: calc(2.8rem * var(--100-to-60));
-  font-size: calc(2.5rem * var(--100-to-80));
+  font-size: gv.$title3-font-size;
   color: white;
   max-width: 100%;
 }

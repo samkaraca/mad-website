@@ -15,11 +15,11 @@
     min-width: 20rem;
     max-width: gv.$content-max-width;
     width: calc(100% - 2 * $margin-inline);
-    padding: 1rem;
+    padding: 0.8rem;
     text-transform: uppercase;
     background-color: gv.$secondary-color;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: gv.$title6-font-size;
   }
 
   .list {

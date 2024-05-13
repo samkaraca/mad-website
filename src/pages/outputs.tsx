@@ -40,7 +40,7 @@ export default function Output({ outputs }: { outputs: IOutput[] }) {
       >
         <div className={styles["content"]}>
           <div className={styles["output-list"]}>
-            {outputs.map((output, index) => {
+            {outputs.map((output) => {
               return (
                 <div key={output.year} className={styles["year-block"]}>
                   <h3>{output.year}</h3>

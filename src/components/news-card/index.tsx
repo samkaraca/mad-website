@@ -1,6 +1,5 @@
 import { INewsCard } from "@/types/news-card";
 import styles from "./news-card.module.scss";
-import { UXAnchor } from "../ux-anchor/ux-anchor";
 import { OpenInNewWindowIcon } from "../open-in-new-window-icon";
 import { isHrefOuter } from "@/utils/is-href-outer";
 

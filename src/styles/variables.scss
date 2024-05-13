@@ -11,3 +11,13 @@ $content-max-width: 80rem;
 $default-padding-inline-large: calc(4rem * var(--100-to-50));
 $default-padding-inline-small: calc(2rem * var(--100-to-60));
 $default-below-page-space: 8rem;
+
+// TYPOGRAPHY
+$title1-font-size: calc(4rem * var(--100-to-70));
+$title2-font-size: calc(3rem * var(--100-to-85));
+$title3-font-size: calc(2.5rem * var(--100-to-85));
+$title4-font-size: calc(2rem * var(--100-to-85));
+$title5-font-size: calc(1.6rem * var(--100-to-85));
+$title6-font-size: calc(1.3rem * var(--100-to-90));
+$text1-font-size: calc(1.3rem * var(--100-to-85));
+$text2-font-size: calc(1.1rem * var(--100-to-90));

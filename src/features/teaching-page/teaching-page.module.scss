@@ -25,4 +25,12 @@
   gap: 0.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
+
+  > h2 {
+    font-size: gv.$title5-font-size;
+  }
+
+  > p {
+    font-size: gv.$text2-font-size;
+  }
 }

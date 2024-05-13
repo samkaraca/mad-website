@@ -1,40 +1,8 @@
 @use "../styles/variables.scss" as gv;
-/*
-$themebox-green-light: #F5FBE2;
-$themebox-green: #92AF2B;
-$themebox-green-dark: #5E6738;
-
-$themebox-blue-light: #EBF6FF;
-$themebox-blue: #038FE8;
-$themebox-blue-dark: #004B8D;
-
-$themebox-red-light: #FFEDE2;
-$themebox-red: #F37021;
-$themebox-red-dark: #B42217;
-*/
 
 $themebox-light: rgb(255, 246, 232);
 $themebox: gv.$secondary-color;
 $themebox-dark: black;
-
-.backgroundBanner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100vh;
-  background-color: gv.$primary-color;
-}
-
-.content {
-  background-color: white;
-  h1 {
-    font-size: 2.8rem;
-    padding-bottom: 2rem;
-    padding-top: 0rem;
-  }
-}
 
 .output-list {
   background-color: white;
@@ -60,11 +28,11 @@ $themebox-dark: black;
     border-color: $themebox-dark;
   }
   h3 {
-    font-size: calc(2rem * var(--100-to-80));
+    font-size: gv.$title4-font-size;
     color: #935f05;
   }
   ul {
-    font-size: calc(1rem * var(--100-to-80));
+    font-size: gv.$text2-font-size;
     li {
       padding: calc(0.5rem * var(--100-to-80)) 0rem;
       margin-left: -1rem;

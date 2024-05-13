@@ -1,11 +1,27 @@
 @use "../styles/variables.scss" as gv;
 
 .card {
+  font-size: gv.$text2-font-size;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional: adds shadow for better visibility
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  .card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    );
+    pointer-events: none;
+  }
 
   img {
     width: 100%; // Makes image fill the card width
@@ -21,9 +37,7 @@
     height: 20rem;
     overflow-y: scroll;
     line-height: 1.5rem;
-    padding: 1.5rem;
-    margin: 0.75rem;
-    padding: 0.75rem;
+    padding: calc(1.2rem * var(--100-to-70)) calc(1.5rem * var(--100-to-70));
     display: flex;
     flex-direction: column;
     gap: 1rem;
