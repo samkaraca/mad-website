@@ -15,7 +15,7 @@ export default function ProfileCard(props: IPersonCard) {
       </div>
 
       <h3>{props.name}</h3>
-      <p className={`${jost.className} ${styles["title"]}`}>{props.title}</p>
+      {/* <p className={`${jost.className} ${styles["title"]}`}>{props.title}</p> */}
       <div className={styles["subset"]}>
         {props.phone && (
           <div>
