@@ -47,8 +47,22 @@ export const readPeople = async (): Promise<IPersonCard[]> => {
   return await readJsonArray("public/db/people.json");
 };
 
-export const readOutputs = async (): Promise<IOutput[]> => {
-  return await readJsonArray("public/db/outputs.json");
+export const readOutputs = async (order: "authors" | "years"): Promise<any> => {
+  const outputs = await readJsonArray("public/db/outputs.json");
+
+  const data: any = {};
+  outputs.forEach((output) => {
+    const field = order === "authors" ? output.author : output.date;
+    if (!data[field]) {
+      data[field] = [];
+    }
+
+    data[field].push(output.reference);
+  });
+
+  Object.keys(data).sort
+
+  return data;
 };
 
 export const readCourses = async (): Promise<ICourse[]> => {

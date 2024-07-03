@@ -5,7 +5,11 @@ import { IPersonCard } from "@/types/person-card";
 
 export default function ProfileCard(props: IPersonCard) {
   return (
-    <Link className={styles["profile-card"]} href={props.link || 'people'}>
+    <Link
+      className={styles["profile-card"]}
+      href={props.link || "people"}
+      style={{ pointerEvents: props.link ? "auto" : "none" }}
+    >
       <div className={styles["profile-frame"]}>
         <img src={props.image ? props.image : "/person-placeholder.jpg"}></img>
       </div>

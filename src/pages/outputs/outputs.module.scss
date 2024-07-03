@@ -1,4 +1,4 @@
-@use "../styles/variables.scss" as gv;
+@use "../../styles/variables.scss" as gv;
 
 $themebox-light: rgb(255, 246, 232);
 $themebox: gv.$secondary-color;
@@ -9,6 +9,19 @@ $themebox-dark: black;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.grouping-options {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+
+  a {
+    color: black;
+  }
 }
 
 .year-block {

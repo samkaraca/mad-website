@@ -3,16 +3,29 @@ import styles from "./outputs.module.scss";
 import { IOutput } from "@/types/output";
 import { readOutputs } from "@/utils/read-file";
 import Head from "next/head";
+import Link from "next/link";
 
-export async function getStaticProps() {
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { orderBy: "authors" } },
+      { params: { orderBy: "years" } },
+    ],
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }: { params: any }) {
+  const { orderBy } = params;
+
   return {
     props: {
-      outputs: await readOutputs(),
+      outputs: await readOutputs(orderBy),
     },
   };
 }
 
-export default function Output({ outputs }: { outputs: IOutput[] }) {
+export default function Output({ outputs }: { outputs: any }) {
   return (
     <>
       <Head>
@@ -38,20 +51,28 @@ export default function Output({ outputs }: { outputs: IOutput[] }) {
         imageAlt="Close-up of the keys of an old-fashioned typewriter, highlighting the round, metallic keys with worn letters."
         embeddedTitle="All Publications By The MAD Research Group"
       >
+        <section className={styles["grouping-options"]}>
+          <Link href="/outputs/years">By years</Link>|
+          <Link href="/outputs/authors">By authors</Link>
+        </section>
         <div className={styles["content"]}>
           <div className={styles["output-list"]}>
-            {outputs.map((output) => {
-              return (
-                <div key={output.year} className={styles["year-block"]}>
-                  <h3>{output.year}</h3>
-                  <ul>
-                    {output.references.map((reference, index) => {
-                      return <li key={index}>{reference}</li>;
-                    })}
-                  </ul>
-                </div>
-              );
-            })}
+            {Object.keys(outputs)
+              .sort((a: any, b: any) => b - a)
+              .map((key: any) => {
+                const obj: string[] = outputs[key];
+
+                return (
+                  <div key={key} className={styles["year-block"]}>
+                    <h3>{key}</h3>
+                    <ul>
+                      {obj.map((reference, index) => {
+                        return <li key={index}>{reference}</li>;
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </DefaultMainContainer>

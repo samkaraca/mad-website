@@ -37,37 +37,37 @@ export const Navigation = ({
           />
           <Link
             tabIndex={tabIndex}
-            isActive={path === "/news"}
+            isActive={path.startsWith("/news")}
             title="News"
             link="/news"
           />
           <Link
             tabIndex={tabIndex}
-            isActive={path === "/outputs"}
+            isActive={path.startsWith("/outputs")}
             title="Outputs"
-            link="/outputs"
+            link="/outputs/years"
           />
           <Link
             tabIndex={tabIndex}
-            isActive={path === "/projects"}
+            isActive={path.startsWith("/projects")}
             title="Projects"
             link="/projects"
           />
           <Link
             tabIndex={tabIndex}
-            isActive={path === "/grants"}
+            isActive={path.startsWith("/grants")}
             title="Grants"
             link="/grants"
           />
           <Link
             tabIndex={tabIndex}
-            isActive={path === "/teaching"}
+            isActive={path.startsWith("/teaching")}
             title="Teaching"
             link="/teaching"
           />
           <Link
             tabIndex={tabIndex}
-            isActive={path === "/people"}
+            isActive={path.startsWith("/people")}
             title="People"
             link="/people"
           />
