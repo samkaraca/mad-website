@@ -86,11 +86,12 @@ export const Footer = ({
           </section>
           <img src="/kiwi-bird.svg" alt="Kiwi bird" />
         </section>
-      </section>
-      <section className={styles["copyright"]}>
-        <p className={jost.className}>
-          Copyright © 1998 – 2024 Massey University. All rights reserved.
-        </p>
+        <section className={styles["copyright"]}>
+          <img src="/mad-logo.svg" alt="" />
+          <p className={jost.className}>
+            Copyright © 1998 – 2024 Massey University. All rights reserved.
+          </p>
+        </section>
       </section>
     </footer>
   );

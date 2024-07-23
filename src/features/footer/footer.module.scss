@@ -22,7 +22,7 @@ $acknowledgement-text-color: #999;
 .footer-body {
   padding-inline: 6rem;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 
   > .main-content {
     display: flex;
@@ -80,6 +80,7 @@ $acknowledgement-text-color: #999;
 
   h2 {
     font-size: 1.3rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
   }
 
@@ -92,14 +93,20 @@ $acknowledgement-text-color: #999;
 }
 
 .copyright {
-  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+
+  > img {
+    height: 2.5rem;
+  }
 
   > p {
-    text-align: right;
     font-weight: 100;
     padding-block: 1rem;
     color: white;
-    margin-inline: gv.$default-padding-inline-small;
   }
 }
 
@@ -128,8 +135,10 @@ $acknowledgement-text-color: #999;
     }
   }
 
-  .copyright > p {
-    text-align: center;
+  .copyright {
+    justify-content: center;
+    padding-inline: 5%;
+    padding-bottom: 1rem;
   }
 
   .contact-and-follow {
@@ -140,8 +149,14 @@ $acknowledgement-text-color: #999;
 }
 
 @media screen and (max-width: 480px) {
-  .copyright > p {
-    text-align: left;
+  .copyright {
+    background-color: #333;
+    padding-bottom: 0;
+    margin-top: 2rem;
+
+    > img {
+      height: 2rem;
+    }
   }
 
   .contact-and-follow {
@@ -149,5 +164,13 @@ $acknowledgement-text-color: #999;
     margin-inline: auto;
     flex-direction: column;
     gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .copyright {
+    flex-direction: column;
+    padding-top: 1.3rem;
+    text-align: center;
   }
 }

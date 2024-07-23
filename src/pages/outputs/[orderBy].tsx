@@ -67,7 +67,12 @@ export default function Output({ outputs }: { outputs: any }) {
                     <h3>{key}</h3>
                     <ul>
                       {obj.map((reference, index) => {
-                        return <li key={index}>{reference}</li>;
+                        return (
+                          <li
+                            dangerouslySetInnerHTML={{ __html: reference }}
+                            key={index}
+                          />
+                        );
                       })}
                     </ul>
                   </div>
