@@ -34,25 +34,24 @@ $themebox-dark: black;
   background-color: $themebox-light;
   border-color: $themebox;
   color: $themebox-dark;
-  li {
-    color: $themebox-dark;
-  }
+
   hr {
     border-color: $themebox-dark;
+    border-width: 0.06rem;
+    border-color: #935f05;
   }
+
   h3 {
     font-size: gv.$title4-font-size;
     color: #935f05;
   }
+
   ul {
     font-size: gv.$text2-font-size;
     li {
       padding: calc(0.5rem * var(--100-to-80)) 0rem;
       margin-left: -1rem;
+      color: $themebox-dark;
     }
-  }
-  hr {
-    border-width: 0.06rem;
-    border-color: #935f05;
   }
 }
